@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "style": "sass sasr20/scss/style.scss sasr20/css/style.css --no-source-map",
-    "style-min": "sass sasr20/scss/style.scss sasr20/css/style.min.css --no-source-map --style compressed"
+    "lint": "stylelint \"**/*.scss\"",
+    "watch": "sass entrepreneur/scss/style.scss entrepreneur/css/style.css --no-source-map --watch",
+    "watch-min": "sass entrepreneur/scss/style.scss entrepreneur/css/style.min.css --no-source-map --watch",
+    "style": "sass entrepreneur/scss/style.scss entrepreneur/css/style.css --no-source-map",
+    "style-min": "sass entrepreneur/scss/style.scss entrepreneur/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +19,8 @@
     "sass": "^1.30.0",
     "stylelint": "^13.8.0",
     "stylelint-config-sass-guidelines": "^7.1.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1"
   }
 }
