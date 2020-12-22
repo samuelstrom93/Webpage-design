@@ -9,9 +9,11 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 @import 'media-queries';
 @import 'header';
+@import 'highlights';
 @import 'typography';
 @import 'footer';
 
+// @import 'nav';
 
 
 * {
@@ -21,7 +23,6 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
-
 
 h1,
 h2,

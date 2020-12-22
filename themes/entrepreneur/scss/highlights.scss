@@ -1,0 +1,18 @@
+.highlights {
+    display: grid;
+    padding: 0 3em 1.5em;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em 2em;
+
+    h1 {
+        grid-column: span 3;
+        justify-self: center;
+        padding: 0em 0em 1em 0em;
+    }
+}
+
+
+.project-article {
+    background-color: whitesmoke;
+    height: 20vh;
+}

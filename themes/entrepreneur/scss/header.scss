@@ -5,10 +5,10 @@
     background-position: center;
     color: #fff;
     padding: 0 2em;
-    height: 25vh;
+    height: 17.5vh;
 }
 
-div.container a
+div.topBotomBordersIn a
 {
     color: #fff;
     text-decoration: none;
@@ -17,6 +17,7 @@ div.container a
     position: relative;
     z-index: 0;
     cursor: pointer;
+    font-size: 1.2em;
 }
 
 div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
@@ -51,16 +52,19 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 
 
 
-
-
 .title, .logo {
     float: left;
-    padding: 3em 3em 0 0;
+    padding: 1em 0 0 0;
 }
 
 .title * {
     margin: 0;
     color: #111;
+}
+
+.title {
+    padding-top: 4.5vh;
+    padding-left: 3vh;
 }
 
 .title p {
@@ -112,12 +116,13 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 }
 
 .nav .active a, .nav a:hover, .nav-toggle:hover {
-    color: #3b440d;
+    // color: rgb(0, 0, 0);
+    text-decoration: underline;
 }
 
 .nav a:hover, .nav-toggle:hover {
-    color: #3b440d;
-    text-decoration: underline;
+    // text-decoration: underline;
+    // font-size: 1.05em;
 }
 
 .nav-toggle {
