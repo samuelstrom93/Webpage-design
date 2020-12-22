@@ -12,6 +12,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'highlights';
 @import 'typography';
 @import 'footer';
+@import 'about';
 
 // @import 'nav';
 
@@ -67,6 +68,7 @@ body {
 body {
     display: flex;
     flex-direction: column;
+    background-color: #f6f1eb ;
 }
 
 .main {

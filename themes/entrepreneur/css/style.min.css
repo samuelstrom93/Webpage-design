@@ -6640,19 +6640,34 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
 
 .highlights {
   display: grid;
-  padding: 0 3em 1.5em;
+  padding: 0 5em 1.5em;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1em 2em;
+  gap: 3em 4em;
 }
 .highlights h1 {
   grid-column: span 3;
   justify-self: center;
-  padding: 0em 0em 1em 0em;
 }
 
 .project-article {
-  background-color: whitesmoke;
-  height: 20vh;
+  background-color: #a89e91;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.project-article img {
+  border-radius: 12px 12px 0 0;
+}
+.project-article h2 {
+  text-align: center;
+  padding: 0.5em 0;
+}
+.project-article p {
+  padding: 0em 1.5em 2em 1.5em;
+}
+
+.project-article:hover {
+  transform: scale(1.05);
 }
 
 html {
@@ -6765,8 +6780,8 @@ abbr {
   }
 }
 .footer {
-  background: #707070;
-  color: #c0c0c0;
+  background: #809ba8;
+  color: #fff;
 }
 
 .footer a {
@@ -6786,6 +6801,60 @@ abbr {
   float: right;
   padding: 1.5em 0 1.5em 1em;
   font-size: 2rem;
+}
+
+.about-container {
+  display: grid;
+  padding: 0 5em 1.5em;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em 4em;
+}
+.about-container h1 {
+  grid-column: span 2;
+  justify-self: center;
+}
+.about-container picture {
+  justify-self: center;
+}
+.about-container picture img {
+  border-radius: 16px;
+}
+.about-container .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 2em 3em;
+  border: 1px solid black;
+  border-radius: 16px;
+  width: 425px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 5em 1.5em;
+  gap: 3em 4em;
+}
+.projects h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.project-about {
+  justify-self: center;
+}
+.project-about img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+.project-about h2 {
+  margin: 1em 0;
+  text-align: center;
+}
+.project-about :hover {
+  transform: scale(1.1);
 }
 
 * {
@@ -6838,6 +6907,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  background-color: #f6f1eb;
 }
 
 .main {

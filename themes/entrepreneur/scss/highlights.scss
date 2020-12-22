@@ -1,18 +1,37 @@
 .highlights {
     display: grid;
-    padding: 0 3em 1.5em;
+    padding: 0 5em 1.5em;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1em 2em;
+    gap: 3em 4em;
 
     h1 {
         grid-column: span 3;
         justify-self: center;
-        padding: 0em 0em 1em 0em;
     }
 }
 
 
 .project-article {
-    background-color: whitesmoke;
-    height: 20vh;
+    background-color: #a89e91;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform .2s;
+    
+
+    img {
+        border-radius: 12px 12px 0 0;
+    }
+
+    h2 {
+        text-align: center;
+        padding: 0.5em 0;
+    }
+
+    p {
+        padding: 0em 1.5em 2em 1.5em;
+    }
+}
+
+.project-article:hover {
+    transform: scale(1.05);
 }
