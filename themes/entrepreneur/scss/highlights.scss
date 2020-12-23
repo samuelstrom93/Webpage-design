@@ -10,6 +10,13 @@
     }
 }
 
+@media (max-width: 767px) {
+    .project-article,
+    .highlights h1 {
+        grid-column: span 3;
+    }
+}
+
 
 .project-article {
     background-color: #a89e91;
@@ -35,3 +42,4 @@
 .project-article:hover {
     transform: scale(1.05);
 }
+

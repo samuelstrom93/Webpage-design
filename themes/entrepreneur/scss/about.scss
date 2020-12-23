@@ -1,18 +1,18 @@
 .about-container {
     display: grid;
     padding: 0 5em 1.5em;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 3em 4em;
     
-    
-    
     h1 {
-        grid-column: span 2;
+        grid-column: span 3;
         justify-self: center;
     }
 
     picture {
         justify-self: center;
+        grid-column: span 2;
+        justify-self: start;
 
         img {
             border-radius: 16px;
@@ -26,10 +26,15 @@
         flex-direction: column;
         justify-content: center;
         margin: auto;
-        padding: 2em 3em;
+        padding: 0 1.5em 1em 1.5em;
         border: 1px solid black;
         border-radius: 16px;
         width: 425px;
+        background-color: #EBF2F5;
+
+        h1 {
+            text-align: center;
+        }
     }
 
 }
@@ -40,18 +45,17 @@
     grid-template-columns: repeat(3, 1fr);
     padding: 0 5em 1.5em;
     gap: 3em 4em;
+    
+    img {
+        cursor: pointer;
+    }
 
     h1 {
         grid-column: span 3;
         justify-self: center;
     }
 
-    
-
 }
-
-
-
 
 .project-about {
     justify-self: center;
@@ -69,8 +73,58 @@
     }
 
     :hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
+    }
+}
+
+.contact-about {
+    background-color: #fff;
+    width: 35vh;
+    grid-column: span 3;
+    margin: 3em 0 0 10em;
+    padding: 0em 1em 1em 1em;
+    border-radius: 12px;
+    border: 1px solid black;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-container h1,
+    .about-container picture,
+    .intro {
+        grid-column: span 2;
+        justify-self: center;
+    }
+
+    .contact-about {
+        justify-self: center;
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-container h1,
+    .about-container picture,
+    .intro {
+        grid-column: span 2;
+        justify-self: center;
     }
 }
 
 
+@media (max-width: 992px) {
+    .projects h1,
+    .project-about {
+        grid-column: span 3;
+    }
+}
+
+@media (max-width: 767px) {
+    .projects h1,
+    .project-about {
+        grid-column: span 3;
+    }
+}

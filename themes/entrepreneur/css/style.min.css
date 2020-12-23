@@ -6520,7 +6520,6 @@ readers do not read off random characters that represent icons */
   background-position: center;
   color: #fff;
   padding: 0 2em;
-  height: 17.5vh;
 }
 
 div.topBotomBordersIn a {
@@ -6649,6 +6648,12 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
   justify-self: center;
 }
 
+@media (max-width: 767px) {
+  .project-article,
+.highlights h1 {
+    grid-column: span 3;
+  }
+}
 .project-article {
   background-color: #a89e91;
   border-radius: 12px;
@@ -6806,15 +6811,17 @@ abbr {
 .about-container {
   display: grid;
   padding: 0 5em 1.5em;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 3em 4em;
 }
 .about-container h1 {
-  grid-column: span 2;
+  grid-column: span 3;
   justify-self: center;
 }
 .about-container picture {
   justify-self: center;
+  grid-column: span 2;
+  justify-self: start;
 }
 .about-container picture img {
   border-radius: 16px;
@@ -6824,10 +6831,14 @@ abbr {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  padding: 2em 3em;
+  padding: 0 1.5em 1em 1.5em;
   border: 1px solid black;
   border-radius: 16px;
   width: 425px;
+  background-color: #EBF2F5;
+}
+.about-container .intro h1 {
+  text-align: center;
 }
 
 .projects {
@@ -6835,6 +6846,9 @@ abbr {
   grid-template-columns: repeat(3, 1fr);
   padding: 0 5em 1.5em;
   gap: 3em 4em;
+}
+.projects img {
+  cursor: pointer;
 }
 .projects h1 {
   grid-column: span 3;
@@ -6854,9 +6868,55 @@ abbr {
   text-align: center;
 }
 .project-about :hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
+.contact-about {
+  background-color: #fff;
+  width: 35vh;
+  grid-column: span 3;
+  margin: 3em 0 0 10em;
+  padding: 0em 1em 1em 1em;
+  border-radius: 12px;
+  border: 1px solid black;
+}
+.contact-about h1 {
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .about-container h1,
+.about-container picture,
+.intro {
+    grid-column: span 2;
+    justify-self: center;
+  }
+
+  .contact-about {
+    justify-self: center;
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .about-container h1,
+.about-container picture,
+.intro {
+    grid-column: span 2;
+    justify-self: center;
+  }
+}
+@media (max-width: 992px) {
+  .projects h1,
+.project-about {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 767px) {
+  .projects h1,
+.project-about {
+    grid-column: span 3;
+  }
+}
 * {
   box-sizing: border-box;
   border: 0 none;
