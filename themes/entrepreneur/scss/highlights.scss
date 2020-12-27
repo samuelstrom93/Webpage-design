@@ -23,6 +23,7 @@
     border-radius: 12px;
     cursor: pointer;
     transition: transform .2s;
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
     
 
     img {
@@ -37,9 +38,11 @@
     p {
         padding: 0em 1.5em 2em 1.5em;
     }
+
 }
 
 .project-article:hover {
     transform: scale(1.05);
+    box-shadow: none;
 }
 

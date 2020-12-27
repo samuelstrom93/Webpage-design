@@ -1,0 +1,135 @@
+.index-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em 4em;
+    width: 85%;
+    margin: auto;
+
+    h1 {
+        grid-column: span 3;
+        justify-self: center;
+    }
+}
+
+
+
+.index-intro {
+    display: flex;
+    grid-column: span 2;
+    width: 50%;
+    justify-self: center;
+
+    p {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.4;
+        border-radius: 16px;
+        border: 1px solid black;
+        padding: 1em;
+        background-color: #fff;
+    }
+
+    
+
+    a {
+        display: inline-block;
+        background: #a89e91;;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-size: 1.1em;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 15px;
+        align-self: flex-end;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        background-color: #cabead;
+    }
+}
+
+picture img {
+    border-radius: 16px;
+}
+
+.project-about {
+    text-align: center;
+    justify-self: center;
+
+    h2 {
+        margin: 1em 0;
+        text-align: center;
+    }
+
+    img {
+        height: 300px;
+        width: 300px;
+        border-radius: 0;
+        box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    a {
+        display: inline-block;
+        background: #a89e91;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-size: 1.1em;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        background-color: #cabead;
+    }
+
+    img:hover {
+        border-radius: 50%;
+        transition: all .4s ease;
+        box-shadow: none;
+    }
+}
+
+.index-container h2 {
+    grid-column: span 3;
+    text-align: center;
+    
+    a {
+        text-decoration: underline;
+        color: #000;
+    }
+
+    a:hover {
+        padding: 0.2em 0.3em;
+        font-size: 1.05em;
+        background-color: #cabead;
+        border-radius: 16px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .index-container h1,
+    .project-about,
+    .index-intro,
+    picture
+    {
+        grid-column: span 3;
+    }
+
+    picture {
+        margin: auto;
+    }
+
+    .index-intro a {
+        align-self: center;
+    }
+    
+}
+
+
+
