@@ -6871,6 +6871,18 @@ abbr {
   width: 100%;
 }
 
+.report-link {
+  color: #000;
+  text-decoration: underline;
+}
+
+.report-link:hover {
+  padding: 0.2em 0.3em;
+  font-size: 1.05em;
+  background-color: #cabead;
+  border-radius: 16px;
+}
+
 @media (max-width: 992px) {
   .about-container {
     margin: 0;
