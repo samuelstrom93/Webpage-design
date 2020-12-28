@@ -6658,7 +6658,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
   background-color: #a89e91;
   border-radius: 12px;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.3s;
   box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
 }
 .project-article img {
@@ -6826,16 +6826,13 @@ abbr {
 .about-container picture img {
   border-radius: 16px;
 }
-.about-container ul {
-  font-size: 1.1em;
-  font-weight: bold;
-}
 .about-container li {
   margin: 0.4em 0;
 }
 .about-container li a {
   color: #000;
   font-weight: bold;
+  font-size: 24px;
 }
 .about-container li:hover {
   text-decoration: underline;
@@ -6846,10 +6843,10 @@ abbr {
   justify-content: center;
   margin: auto;
   padding: 0 1.5em 1em 1.5em;
-  border: 1px solid black;
+  border: 1px solid #000;
   border-radius: 16px;
   width: 425px;
-  background-color: #EBF2F5;
+  background-color: #ebf2f5;
   justify-self: center;
 }
 .about-container .intro h1 {
@@ -6861,8 +6858,9 @@ abbr {
   width: 425px;
   padding: 0em 1em 1em 1em;
   border-radius: 12px;
-  border: 1px solid black;
+  border: 1px solid #000;
   justify-self: center;
+  align-self: center;
 }
 .motivation-container h1 {
   text-align: center;
@@ -6929,8 +6927,8 @@ abbr {
   flex-direction: column;
   line-height: 1.4;
   border-radius: 16px;
-  border: 1px solid black;
-  padding: 1em;
+  border: 1px solid #000;
+  padding: 1.5em;
   background-color: #fff;
 }
 .index-intro a {
@@ -6942,7 +6940,7 @@ abbr {
   color: #000;
   text-decoration: none;
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 35px;
   align-self: flex-end;
 }
 .index-intro a:hover {
@@ -7009,7 +7007,7 @@ abbr {
 }
 
 .section-break-3 {
-  background-color: #f6f1eb;
+  background-color: #fff;
   border: 0;
   border-top: 1px solid #000;
   height: 1px;

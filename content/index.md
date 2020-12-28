@@ -1,6 +1,6 @@
 ---
 Title: Home
-Description: This is our index page.
+Description: Index page.
 ---
 
 Home
@@ -10,7 +10,7 @@ Home
 
 <div class="index-intro">
     <p>My name is Jerry Swift and i'm a freelancing web developer. I have worked with big companies in sweden such as Spotify, IKEA, Cygni and HiQ and my expertise lies in making stylish website with advanced HTML/CSS and Javascript with help of several framesworks - e.g React and Vue. 
-    <a href="/about" alt="about-page">Read more about me </a>
+    <a href="./about" alt="about-page">Read more about me </a>
     </p>
 </div>
 <picture>
@@ -19,15 +19,16 @@ Home
     <img src="../portfolio/image/person_doesnt_exist.jpeg&w=350" alt="Me">
 </picture>
 
-<h1 class="projects-header">Some of my projects </h1>
 
 <div class="sb sb-home">
       <small></small>
       <hr class="section-break-3" />
 </div>
 
+<h1 class="projects-header">Some of my projects </h1>
+
 <h2>
-    Check out one of my projects or <a href="#">check out all my projects</a>   
+    Check out one of my projects or <a href="./highlights" alt="projects">check out all my projects</a>   
 </h2>
 
 <div class="project-about">

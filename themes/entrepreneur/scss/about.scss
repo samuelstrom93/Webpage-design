@@ -17,11 +17,6 @@
         }
     }
 
-    ul {
-        font-size: 1.1em;
-        font-weight: bold;
-    }
-
     li {
         margin: 0.4em 0;
     }
@@ -29,6 +24,7 @@
     li a {
         color: #000;
         font-weight: bold;
+        font-size: 24px;
     }
 
     li:hover {
@@ -41,10 +37,10 @@
         justify-content: center;
         margin: auto;
         padding: 0 1.5em 1em 1.5em;
-        border: 1px solid black;
+        border: 1px solid #000;
         border-radius: 16px;
         width: 425px;
-        background-color: #EBF2F5;
+        background-color: $text-background;
         justify-self: center;
 
         h1 {
@@ -57,12 +53,13 @@
 
 
 .motivation-container {
-    background-color: #fff;
+    background-color: $white-background;
     width: 425px;
     padding: 0em 1em 1em 1em;
     border-radius: 12px;
-    border: 1px solid black;
+    border: 1px solid #000;
     justify-self: center;
+    align-self: center;
 
     h1 {
         text-align: center;

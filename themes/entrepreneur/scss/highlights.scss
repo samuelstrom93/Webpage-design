@@ -19,10 +19,10 @@
 
 
 .project-article {
-    background-color: #a89e91;
+    background-color: $link-background;
     border-radius: 12px;
     cursor: pointer;
-    transition: transform .2s;
+    transition: transform .3s;
     box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
 
     img {
