@@ -3,7 +3,7 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page
+Home
 ==========================
 
 
@@ -16,9 +16,15 @@ Home page
 <picture>
     <source media="(min-width: 668px)" srcset="../portfolio/image/person_doesnt_exist.jpeg&w=350" alt="Me">
     <source media="(min-width: 376px)" srcset="../portfolio/image/person_doesnt_exist.jpeg&w=300" alt="Me"> 
-    <img src="..portfolio/image/person_doesnt_exist.jpeg&w=350" alt="Me">
+    <img src="../portfolio/image/person_doesnt_exist.jpeg&w=350" alt="Me">
 </picture>
+
 <h1 class="projects-header">Some of my projects </h1>
+
+<div class="sb sb-home">
+      <small></small>
+      <hr class="section-break-3" />
+</div>
 
 <h2>
     Check out one of my projects or <a href="#">check out all my projects</a>   
@@ -28,7 +34,7 @@ Home page
         <picture>
             <source media="(min-width: 668px)" srcset="../portfolio/image/open.jpeg&w=350" alt="Me">
             <source media="(min-width: 376px)" srcset="../portfolio/image/open.jpeg&w=300" alt="Me"> 
-            <img src="../portfolio/assets/img/open.jpeg&w=300" alt="Me">
+            <img src="../portfolio/image/open.jpeg&w=300" alt="Me">
         </picture>
         <h2>Projektnamn</h2>
         <a href="#" alt="about-page">Check out</a>
@@ -37,7 +43,7 @@ Home page
         <picture>
             <source media="(min-width: 668px)" srcset="../portfolio/image/open.jpeg&w=350" alt="Me">
             <source media="(min-width: 376px)" srcset="../portfolio/image/open.jpeg&w=300" alt="Me"> 
-            <img src="../portfolio/assets/img/open.jpeg&w=300" alt="Me">
+            <img src="../portfolio/image/open.jpeg&w=300" alt="Me">
         </picture>
         <h2>Projektnamn</h2>
         <a href="#" alt="about-page">Check out</a>
@@ -46,7 +52,7 @@ Home page
         <picture>
             <source media="(min-width: 668px)" srcset="../portfolio/image/open.jpeg&w=350" alt="Me">
             <source media="(min-width: 376px)" srcset="../portfolio/image/open.jpeg&w=300" alt="Me"> 
-            <img src="../portfolio/assets/img/open.jpeg&w=300" alt="Me">
+            <img src="../portfolio/image/open.jpeg&w=300" alt="Me">
         </picture>
         <h2>Projektnamn</h2>
         <a href="#" alt="about-page">Check out</a>
@@ -54,6 +60,4 @@ Home page
 </div>
 
 
-
-Fixa en svg-separator/divider
 

@@ -9,6 +9,10 @@
         grid-column: span 3;
         justify-self: center;
     }
+
+    picture img {
+        border-radius: 16px;
+    }
 }
 
 
@@ -30,8 +34,6 @@
         background-color: #fff;
     }
 
-    
-
     a {
         display: inline-block;
         background: #a89e91;;
@@ -51,9 +53,7 @@
     }
 }
 
-picture img {
-    border-radius: 16px;
-}
+
 
 .project-about {
     text-align: center;
@@ -111,8 +111,44 @@ picture img {
     }
 }
 
+.row {
+    grid-column: span 3;
+}
+
+.sb.sb-home {
+    grid-column: span 3;
+    width: 100%;
+}
+
+.section-break-3 {
+    $break-color: #000;
+    background-color: #f6f1eb;
+    border: 0;
+    border-top: 1px solid #000;
+    height: 1px;
+    margin: 2rem auto;
+    text-align: center;
+  
+    &:before {
+      background-color: #f6f1eb;
+      color: darken(#000, 20%);
+      content: '\25C9';
+      display: inline-block;
+      left: 50%;
+      line-height: 1;
+      padding: 0 .5rem;
+      text-rendering: geometricPrecision;
+      transform: translateY(-53%);
+      z-index: 1;
+    }
+}
+  
 
 @media (max-width: 992px) {
+    .index-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .index-container h1,
     .project-about,
     .index-intro,
@@ -127,6 +163,15 @@ picture img {
 
     .index-intro a {
         align-self: center;
+    }
+
+    .index-container {
+        width: 400x;
+    }
+
+    .index-intro {
+        width: 275px;
+        text-align: center;
     }
     
 }

@@ -1,8 +1,8 @@
 .highlights {
     display: grid;
-    padding: 0 5em 1.5em;
+    padding: 0 7.5em 1.5em;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3em 4em;
+    gap: 4.5em 6em;
 
     h1 {
         grid-column: span 3;
@@ -10,7 +10,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
     .project-article,
     .highlights h1 {
         grid-column: span 3;
@@ -24,7 +24,6 @@
     cursor: pointer;
     transition: transform .2s;
     box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
-    
 
     img {
         border-radius: 12px 12px 0 0;
@@ -36,13 +35,13 @@
     }
 
     p {
-        padding: 0em 1.5em 2em 1.5em;
+        padding: 0em 1.5em 1em 1.5em;
     }
 
 }
 
 .project-article:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     box-shadow: none;
 }
 

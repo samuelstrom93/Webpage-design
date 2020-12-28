@@ -4,7 +4,7 @@ Description: This is my hightlight page.
 Template: highlights
 ---
 
-Hightlight page
+Hightlights
 ==========================
 
 <div class="project-article">

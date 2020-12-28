@@ -6639,16 +6639,16 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
 
 .highlights {
   display: grid;
-  padding: 0 5em 1.5em;
+  padding: 0 7.5em 1.5em;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3em 4em;
+  gap: 4.5em 6em;
 }
 .highlights h1 {
   grid-column: span 3;
   justify-self: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .project-article,
 .highlights h1 {
     grid-column: span 3;
@@ -6669,11 +6669,11 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
   padding: 0.5em 0;
 }
 .project-article p {
-  padding: 0em 1.5em 2em 1.5em;
+  padding: 0em 1.5em 1em 1.5em;
 }
 
 .project-article:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   box-shadow: none;
 }
 
@@ -6868,7 +6868,18 @@ abbr {
   text-align: center;
 }
 
+.sb.sb-about {
+  grid-column: span 2;
+  width: 100%;
+}
+
 @media (max-width: 992px) {
+  .about-container {
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .about-container h1,
 .about-container picture,
 .intro {
@@ -6876,17 +6887,19 @@ abbr {
     justify-self: center;
   }
 
-  .motivation-container {
-    justify-self: center;
-    margin: 0;
-  }
-}
-@media (max-width: 767px) {
-  .about-container h1,
-.about-container picture,
-.intro {
+  .sb.sb-about {
     grid-column: span 2;
+    width: 85%;
     justify-self: center;
+  }
+
+  .motivation-container {
+    width: 300px;
+    grid-column: span 2;
+  }
+
+  .about-container .intro {
+    width: 300px;
   }
 }
 .index-container {
@@ -6899,6 +6912,9 @@ abbr {
 .index-container h1 {
   grid-column: span 3;
   justify-self: center;
+}
+.index-container picture img {
+  border-radius: 16px;
 }
 
 .index-intro {
@@ -6932,10 +6948,6 @@ abbr {
 .index-intro a:hover {
   text-decoration: underline;
   background-color: #cabead;
-}
-
-picture img {
-  border-radius: 16px;
 }
 
 .project-about {
@@ -6987,7 +6999,41 @@ picture img {
   border-radius: 16px;
 }
 
+.row {
+  grid-column: span 3;
+}
+
+.sb.sb-home {
+  grid-column: span 3;
+  width: 100%;
+}
+
+.section-break-3 {
+  background-color: #f6f1eb;
+  border: 0;
+  border-top: 1px solid #000;
+  height: 1px;
+  margin: 2rem auto;
+  text-align: center;
+}
+.section-break-3:before {
+  background-color: #f6f1eb;
+  color: black;
+  content: "◉";
+  display: inline-block;
+  left: 50%;
+  line-height: 1;
+  padding: 0 0.5rem;
+  text-rendering: geometricPrecision;
+  transform: translateY(-53%);
+  z-index: 1;
+}
+
 @media (max-width: 992px) {
+  .index-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .index-container h1,
 .project-about,
 .index-intro,
@@ -7001,6 +7047,15 @@ picture {
 
   .index-intro a {
     align-self: center;
+  }
+
+  .index-container {
+    width: 400x;
+  }
+
+  .index-intro {
+    width: 275px;
+    text-align: center;
   }
 }
 * {
