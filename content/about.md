@@ -51,7 +51,7 @@ Template: about
       <hr class="section-break-3" />
 </div>
 
-<p>Check out my <a href="./report" alt="report page">report page</a> for more information about my design choices</p>
+<p>Check out my <a href="./report" alt="report page" class="report-link">report page</a> for more information about my design choices</p>
 
 </div>
 
