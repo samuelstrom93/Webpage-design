@@ -38,20 +38,17 @@
     font-size: 1.25em;
 }
 
-#nav a:hover, #nav-toggle:hover {
-    text-decoration: underline;
-}
-
-
 #nav-toggle {
     display: none;
 }
 
 #nav .active a, #nav a:hover, #nav-toggle:hover {
-    color: rgb(5, 5, 129);
+    text-decoration: underline;
 }
 
-/* Small devices */
+#nav .active a {
+    color: #000;
+}
 
 @media (max-width: 767px) {
     #nav {

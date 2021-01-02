@@ -114,16 +114,6 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     color: #333;
 }
 
-.nav .active a, .nav a:hover, .nav-toggle:hover {
-    // color: rgb(0, 0, 0);
-    text-decoration: underline;
-}
-
-.nav a:hover, .nav-toggle:hover {
-    // text-decoration: underline;
-    // font-size: 1.05em;
-}
-
 .nav-toggle {
     display: none;
 }
@@ -135,3 +125,5 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     display: block;
     clear: both;
 }
+
+

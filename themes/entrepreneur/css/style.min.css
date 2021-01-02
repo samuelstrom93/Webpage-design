@@ -6,7 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -6622,10 +6622,6 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
   color: #333;
 }
 
-.nav .active a, .nav a:hover, .nav-toggle:hover {
-  text-decoration: underline;
-}
-
 .nav-toggle {
   display: none;
 }
@@ -6648,21 +6644,17 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
   justify-self: center;
 }
 
-@media (max-width: 992px) {
-  .project-article,
-.highlights h1 {
-    grid-column: span 3;
-  }
-}
 .project-article {
   background-color: #a89e91;
   border-radius: 12px;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform 0.4s;
   box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
 }
 .project-article img {
   border-radius: 12px 12px 0 0;
+  height: 300px;
+  width: 450px;
 }
 .project-article h2 {
   text-align: center;
@@ -6671,12 +6663,29 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
 .project-article p {
   padding: 0em 1.5em 1em 1.5em;
 }
+.project-article ul {
+  width: 85%;
+  margin: 1em auto;
+}
+.project-article li {
+  margin: 0.3em auto;
+}
 
 .project-article:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: none;
 }
 
+@media (max-width: 992px) {
+  .project-article,
+.highlights h1 {
+    grid-column: span 3;
+  }
+
+  .highlights {
+    padding: 0 2.5em;
+  }
+}
 html {
   font-size: 16px;
 }
@@ -6851,6 +6860,7 @@ abbr {
 }
 .about-container .intro h1 {
   text-align: center;
+  font-family: "Bree Serif", serif;
 }
 
 .motivation-container {
@@ -6973,6 +6983,7 @@ abbr {
   width: 300px;
   border-radius: 0;
   box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 .project-about a {
   display: inline-block;
@@ -6989,7 +7000,7 @@ abbr {
   background-color: #cabead;
 }
 .project-about img:hover {
-  border-radius: 50%;
+  transform: scale(1.05);
   transition: all 0.4s ease;
   box-shadow: none;
 }
@@ -7068,6 +7079,106 @@ picture {
     text-align: center;
   }
 }
+.report-container {
+  width: 75%;
+  margin: auto;
+}
+.report-container h1 {
+  text-align: center;
+  margin: 1 auto;
+}
+.report-container h2 {
+  margin: 0.8em auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0 none;
+}
+
+.slide {
+  overflow-y: hidden !important;
+  -webkit-transition: height 0.5s ease-in !important;
+  transition: height 0.5s ease-in !important;
+}
+
+#nav {
+  padding: 3em 0;
+  text-align: right;
+}
+
+#nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav ul li {
+  display: inline-block;
+  margin-left: 1em;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+#nav .active a, #nav a:hover, #nav-toggle:hover {
+  text-decoration: underline;
+}
+
+#nav .active a {
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  #nav {
+    clear: both;
+    padding: 0;
+  }
+
+  #nav ul {
+    padding-bottom: 1em;
+  }
+
+  #nav ul li {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #nav ul li a {
+    display: block;
+    padding: 0.5em 0;
+  }
+
+  .js #nav-toggle {
+    display: block;
+    float: right;
+    width: 2em;
+    margin: 0.6667em 0;
+    font-size: 1.5rem;
+    line-height: 2em;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .js #nav-toggle > * {
+    vertical-align: middle;
+  }
+}
 * {
   box-sizing: border-box;
   border: 0 none;
@@ -7082,7 +7193,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Slab", serif;
+  font-family: "Bree Serif", serif;
 }
 
 *:focus {

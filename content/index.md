@@ -27,38 +27,36 @@ Home
 
 <h1 class="projects-header">Some of my projects </h1>
 
-<h2>
-    Check out one of my projects or <a href="./highlights" alt="projects">check out all my projects</a>   
-</h2>
-
 <div class="project-about">
         <picture>
-            <source media="(min-width: 668px)" srcset="../portfolio/image/open.jpeg&w=350" alt="Me">
-            <source media="(min-width: 376px)" srcset="../portfolio/image/open.jpeg&w=300" alt="Me"> 
-            <img src="../portfolio/image/open.jpeg&w=300" alt="Me">
+            <source media="(min-width: 668px)" srcset="../portfolio/image/projects/CMS.jpg&w=350" alt="Me">
+            <source media="(min-width: 376px)" srcset="../portfolio/image/projects/CMS.jpg&w=300" alt="Me"> 
+            <img src="../portfolio/image/projects/CMS.jpg&w=300" alt="Me">
         </picture>
-        <h2>Projektnamn</h2>
+        <h2>CMS </h2>
         <a href="#" alt="about-page">Check out</a>
 </div>
 <div class="project-about">
         <picture>
-            <source media="(min-width: 668px)" srcset="../portfolio/image/open.jpeg&w=350" alt="Me">
-            <source media="(min-width: 376px)" srcset="../portfolio/image/open.jpeg&w=300" alt="Me"> 
-            <img src="../portfolio/image/open.jpeg&w=300" alt="Me">
+            <source media="(min-width: 668px)" srcset="../portfolio/image/projects/wordpress_plugin.jpg&w=350" alt="Me">
+            <source media="(min-width: 376px)" srcset="../portfolio/image/projects/wordpress_plugin.jpg&w=300" alt="Me"> 
+            <img src="../portfolio/image/projects/wordpress_plugin.jpg&w=300" alt="Me">
         </picture>
-        <h2>Projektnamn</h2>
+        <h2>Wordpress plugin</h2>
         <a href="#" alt="about-page">Check out</a>
 </div>
 <div class="project-about">
         <picture>
-            <source media="(min-width: 668px)" srcset="../portfolio/image/open.jpeg&w=350" alt="Me">
-            <source media="(min-width: 376px)" srcset="../portfolio/image/open.jpeg&w=300" alt="Me"> 
-            <img src="../portfolio/image/open.jpeg&w=300" alt="Me">
+            <source media="(min-width: 668px)" srcset="../portfolio/image/projects/restaurant.jpg&w=350" alt="Me">
+            <source media="(min-width: 376px)" srcset="../portfolio/image/projects/restaurant.jpg&w=300" alt="Me"> 
+            <img src="../portfolio/image/projects/restaurant.jpg&w=300" alt="Me">
         </picture>
-        <h2>Projektnamn</h2>
+        <h2>Website for restaurant</h2>
         <a href="#" alt="about-page">Check out</a>
     </div>
-</div>
 
+<h2><a href="./highlights" alt="projects">Check out all my projects</a></h2>
+
+</div>
 
 
