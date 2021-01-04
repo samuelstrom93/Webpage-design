@@ -10,12 +10,11 @@
     }
 }
 
-
 .project-article {
     background-color: $link-background;
     border-radius: 12px;
     cursor: pointer;
-    transition: transform .4s;
+    transition: transform 0.4s;
     box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
 
     img {
@@ -30,7 +29,7 @@
     }
 
     p {
-        padding: 0em 1.5em 1em 1.5em;
+        padding: 0 1.5em 1em;
     }
 
     ul {

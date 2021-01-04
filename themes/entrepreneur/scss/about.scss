@@ -36,7 +36,7 @@
         flex-direction: column;
         justify-content: center;
         margin: auto;
-        padding: 0 1.5em 1em 1.5em;
+        padding: 0 1.5em 1em;
         border: 1px solid #000;
         border-radius: 16px;
         width: 425px;
@@ -45,7 +45,6 @@
 
         h1 {
             text-align: center;
-            font-family: 'Bree Serif', serif;
         }
     }
 }
@@ -53,7 +52,7 @@
 .motivation-container {
     background-color: $white-background;
     width: 425px;
-    padding: 0em 1em 1em 1em;
+    padding: 0 1em 1em;
     border-radius: 12px;
     border: 1px solid #000;
     justify-self: center;
@@ -75,10 +74,15 @@
 }
 
 .report-link:hover {
-    padding: 0.2em 0.3em;
     font-size: 1.05em;
-    background-color: $link-hover;
-    border-radius: 16px;
+    border-bottom: 2px solid #000;
+    text-decoration: none;
+    color: #000;
+}
+
+
+.report-text {
+    justify-self: center;
 }
 
 @media (max-width: 992px) {
@@ -108,5 +112,10 @@
 
     .about-container .intro {
         width: 300px;
+    }
+
+    .report-text {
+        text-align: center;
+        grid-column: span 2;
     }
 }

@@ -6457,62 +6457,6 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-@media (max-width: 767px) {
-  .main {
-    padding: 2em 0 1em;
-  }
-
-  .title, .logo {
-    padding: 2em 1.5em 2em 0;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .nav {
-    clear: both;
-    padding: 0;
-  }
-
-  .nav ul {
-    padding-bottom: 1em;
-  }
-
-  .nav ul li {
-    display: block;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .nav ul li a {
-    display: block;
-    padding: 0.5em 0;
-  }
-
-  .js .nav-toggle {
-    display: block;
-    float: right;
-    width: 2em;
-    margin: 0.6667em 0;
-    font-size: 1.5rem;
-    line-height: 2em;
-    text-align: center;
-    cursor: pointer;
-  }
-
-  .js .nav-toggle > * {
-    vertical-align: middle;
-  }
-
-  .footer p {
-    padding: 1em 0;
-  }
-
-  .footer .social {
-    padding: 0.5em 0 0.5em 1em;
-  }
-}
 .hidden {
   display: none !important;
 }
@@ -6530,7 +6474,6 @@ readers do not read off random characters that represent icons */
 
 .slide {
   overflow-y: hidden !important;
-  -webkit-transition: height 0.5s ease-in !important;
   transition: height 0.5s ease-in !important;
 }
 
@@ -6596,10 +6539,66 @@ readers do not read off random characters that represent icons */
   .js #nav-toggle > * {
     vertical-align: middle;
   }
+
+  .main {
+    padding: 2em 0 1em;
+  }
+
+  .title,
+.logo {
+    padding: 2em 1.5em 2em 0;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .nav {
+    clear: both;
+    padding: 0;
+  }
+
+  .nav ul {
+    padding-bottom: 1em;
+  }
+
+  .nav ul li {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .nav ul li a {
+    display: block;
+    padding: 0.5em 0;
+  }
+
+  .js .nav-toggle {
+    display: block;
+    float: right;
+    width: 2em;
+    margin: 0.6667em 0;
+    font-size: 1.5rem;
+    line-height: 2em;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .js .nav-toggle > * {
+    vertical-align: middle;
+  }
+
+  .footer p {
+    padding: 1em 0;
+  }
+
+  .footer .social {
+    padding: 0.5em 0 0.5em 1em;
+  }
 }
 .header {
   background: #fff;
-  background-image: url(../../../image/banner.jpeg?h=100%&q=30);
+  background-image: url("../../../image/banner.jpeg?h=100%&q=30");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -6609,43 +6608,46 @@ readers do not read off random characters that represent icons */
 div.topBotomBordersIn a {
   color: #fff;
   text-decoration: none;
-  margin: 0px 10px;
-  padding: 10px 10px;
+  margin: 0 10px;
+  padding: 10px;
   position: relative;
   z-index: 0;
   cursor: pointer;
   font-size: 1.2em;
 }
 
-div.topBotomBordersIn a:before, div.topBotomBordersIn a:after {
+div.topBotomBordersIn a:before,
+div.topBotomBordersIn a:after {
   position: absolute;
   left: 0px;
   width: 100%;
   height: 2px;
   background: #fff;
-  content: "";
+  content: " ";
   opacity: 0;
   transition: all 0.3s;
 }
 
 div.topBotomBordersIn a:before {
-  top: 0px;
+  top: 0;
   transform: translateY(-10px);
 }
 
-div.topBotomBordersIn a:after {
-  bottom: 0px;
+div.topBotomBordersIn a::after {
+  bottom: 0;
   transform: translateY(10px);
 }
 
-div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
+div.topBotomBordersIn a:hover::before,
+div.topBotomBordersIn a:hover::after {
   opacity: 1;
-  transform: translateY(0px);
+  transform: translateY(0);
 }
 
-.title, .logo {
+.title,
+.logo {
   float: left;
-  padding: 1em 0 0 0;
+  padding: 1em 0 0;
 }
 
 .title * {
@@ -6702,7 +6704,8 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
   font-weight: bold;
 }
 
-.nav a, .nav-toggle {
+.nav a,
+.nav-toggle {
   color: #333;
 }
 
@@ -6745,7 +6748,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
   padding: 0.5em 0;
 }
 .project-article p {
-  padding: 0em 1.5em 1em 1.5em;
+  padding: 0 1.5em 1em;
 }
 .project-article ul {
   width: 85%;
@@ -6774,13 +6777,27 @@ html {
   font-size: 16px;
 }
 
-p, td, th, li, dd {
+p,
+td,
+th,
+li,
+dd {
   text-align: justify;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
 
-p, hr, table, .table-responsive, ol, ul, dl, dd, pre, blockquote, fieldset {
+p,
+hr,
+table,
+.table-responsive,
+ol,
+ul,
+dl,
+dd,
+pre,
+blockquote,
+fieldset {
   margin-bottom: 1em;
 }
 
@@ -6870,11 +6887,13 @@ abbr {
     width: 80%;
   }
 
-  .image.large, .image.xlarge {
+  .image.large,
+.image.xlarge {
     width: 100%;
   }
 
-  .image.float-left, .image.float-right {
+  .image.float-left,
+.image.float-right {
     float: none;
     margin: 0 auto;
   }
@@ -6892,17 +6911,64 @@ abbr {
   color: #fff;
 }
 
-.footer p {
-  margin: 0;
-  padding: 3em 0;
-}
-
 .footer .social {
   float: right;
   padding: 1.5em 0 1.5em 1em;
   font-size: 2rem;
 }
 
+.footer h2 {
+  margin: 0.5em 0 0;
+  color: #000;
+}
+.footer h2 span {
+  border-bottom: 2px solid #000;
+}
+
+.c-info-box {
+  font-style: normal;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #ebf2f5;
+  border-radius: 8px;
+  color: #000;
+  width: 20vh;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  gap: 0.8em;
+  align-items: center;
+}
+.c-info-box p {
+  margin-bottom: 0;
+}
+.c-info-box a {
+  color: inherit;
+}
+.c-info-box a:hover {
+  color: inherit;
+}
+.c-info-box span {
+  border-bottom: 1px dotted rgba(52, 53, 53, 0.7);
+}
+.c-info-box span:hover {
+  color: inherit;
+  border-bottom: 2px solid #000;
+}
+
+@media (max-width: 992px) {
+  .c-info-box {
+    width: 30vh;
+  }
+
+  .footer .social {
+    padding-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .c-info-box {
+    width: 40vh;
+  }
+}
 .about-container {
   display: grid;
   padding: 0 5em 1.5em;
@@ -6935,7 +7001,7 @@ abbr {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  padding: 0 1.5em 1em 1.5em;
+  padding: 0 1.5em 1em;
   border: 1px solid #000;
   border-radius: 16px;
   width: 425px;
@@ -6944,13 +7010,12 @@ abbr {
 }
 .about-container .intro h1 {
   text-align: center;
-  font-family: "Bree Serif", serif;
 }
 
 .motivation-container {
   background-color: #fff;
   width: 425px;
-  padding: 0em 1em 1em 1em;
+  padding: 0 1em 1em;
   border-radius: 12px;
   border: 1px solid #000;
   justify-self: center;
@@ -6971,10 +7036,14 @@ abbr {
 }
 
 .report-link:hover {
-  padding: 0.2em 0.3em;
   font-size: 1.05em;
-  background-color: #cabead;
-  border-radius: 16px;
+  border-bottom: 2px solid #000;
+  text-decoration: none;
+  color: #000;
+}
+
+.report-text {
+  justify-self: center;
 }
 
 @media (max-width: 992px) {
@@ -7005,6 +7074,11 @@ abbr {
   .about-container .intro {
     width: 300px;
   }
+
+  .report-text {
+    text-align: center;
+    grid-column: span 2;
+  }
 }
 .index-container {
   display: grid;
@@ -7022,32 +7096,31 @@ abbr {
 }
 
 .index-intro {
-  display: flex;
   grid-column: span 2;
   width: 50%;
   justify-self: center;
-}
-.index-intro p {
   align-self: center;
   display: flex;
   flex-direction: column;
   line-height: 1.4;
   border-radius: 16px;
   border: 1px solid #000;
-  padding: 1.5em;
+  padding: 1em 1.5em;
   background-color: #fff;
 }
+.index-intro h1 {
+  text-align: center;
+  margin: 0em 1em 0.3em;
+}
 .index-intro a {
-  display: inline-block;
+  display: inline-flex;
   background: #a89e91;
   border-radius: 8px;
   padding: 10px 20px;
+  margin: 1em 0 0;
   font-size: 1.1em;
   color: #000;
-  text-decoration: none;
   font-weight: bold;
-  margin-top: 35px;
-  align-self: flex-end;
 }
 .index-intro a:hover {
   text-decoration: underline;
@@ -7073,7 +7146,7 @@ abbr {
   display: inline-block;
   background: #a89e91;
   border-radius: 8px;
-  padding: 10px 20px;
+  padding: 10px 15px;
   font-size: 1.1em;
   color: #000;
   text-decoration: none;
@@ -7089,23 +7162,20 @@ abbr {
   box-shadow: none;
 }
 
-.index-container h2 {
+.projects-link {
+  margin: 1em 0;
   grid-column: span 3;
   text-align: center;
 }
-.index-container h2 a {
-  text-decoration: underline;
+.projects-link a {
+  background: #a89e91;
+  border-radius: 8px;
+  padding: 10px 15px;
   color: #000;
 }
-.index-container h2 a:hover {
-  padding: 0.2em 0.3em;
-  font-size: 1.05em;
+.projects-link a:hover {
+  text-decoration: underline;
   background-color: #cabead;
-  border-radius: 8px;
-}
-
-.row {
-  grid-column: span 3;
 }
 
 .sb.sb-home {
@@ -7121,14 +7191,14 @@ abbr {
   margin: 2rem auto;
   text-align: center;
 }
-.section-break-3:before {
+.section-break-3::before {
   background-color: #f6f1eb;
   color: black;
   content: "◉";
   display: inline-block;
   left: 50%;
   line-height: 1;
-  padding: 0 0.5rem;
+  padding: 0.5rem;
   text-rendering: geometricPrecision;
   transform: translateY(-53%);
   z-index: 1;

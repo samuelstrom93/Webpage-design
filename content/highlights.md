@@ -15,7 +15,7 @@ Highlights
         </picture>
     <h2>CMS for news</h2>
     <ul>
-        <li>A CMS I made with for a company to support their management of news.</li>
+        <li>A CMS I made with for a company to support their managing of news.</li>
         <li>Built without any frameworks.</li>
         <li>Built with PHP, MySql, HTML, CSS and JavaScript.</li>
     </ul>

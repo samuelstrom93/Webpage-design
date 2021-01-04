@@ -15,7 +15,7 @@
 
 .slide {
     overflow-y: hidden !important;
-    -webkit-transition: height 0.5s ease-in !important;
+    // -webkit-transition: height 0.5s ease-in !important;
     transition: height 0.5s ease-in !important;
 }
 
@@ -55,18 +55,22 @@
         clear: both;
         padding: 0;
     }
+
     #nav ul {
         padding-bottom: 1em;
     }
+
     #nav ul li {
         display: block;
         margin-left: 0;
         text-align: center;
     }
+
     #nav ul li a {
         display: block;
         padding: 0.5em 0;
     }
+
     .js #nav-toggle {
         display: block;
         float: right;
@@ -77,7 +81,65 @@
         text-align: center;
         cursor: pointer;
     }
+
     .js #nav-toggle>* {
         vertical-align: middle;
+    }
+
+    // LEGAT I media-queries.scss själv tidigare
+    .main {
+        padding: 2em 0 1em;
+    }
+
+    .title,
+    .logo {
+        padding: 2em 1.5em 2em 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .nav {
+        clear: both;
+        padding: 0;
+    }
+
+    .nav ul {
+        padding-bottom: 1em;
+    }
+
+    .nav ul li {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .nav ul li a {
+        display: block;
+        padding: 0.5em 0;
+    }
+
+    .js .nav-toggle {
+        display: block;
+        float: right;
+        width: 2em;
+        margin: 0.6667em 0;
+        font-size: 1.5rem;
+        line-height: 2em;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .js .nav-toggle>* {
+        vertical-align: middle;
+    }
+
+    .footer p {
+        padding: 1em 0;
+    }
+
+    .footer .social {
+        padding: 0.5em 0 0.5em 1em;
     }
 }
