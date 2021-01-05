@@ -50,6 +50,14 @@
     color: #000;
 }
 
+
+@media (max-width: 992px) {
+    .logo {
+        display: none;
+    }
+
+}
+
 @media (max-width: 767px) {
     #nav {
         clear: both;
@@ -90,6 +98,10 @@
     .main {
         padding: 2em 0 1em;
     }
+
+    // .title {
+    //     display: block;
+    // }
 
     .title,
     .logo {

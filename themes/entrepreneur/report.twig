@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en" class="no-js">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,14 +24,14 @@
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
     <div class="header" role="banner">
         <div class="container">
-            <a class="nav-toggle" id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
+            <a class="nav-toggle" id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false">
                 <i class="fa fa-bars" aria-hidden="true" id="toggler"></i>
                 <span class="sr-only">Toggle Menu</span>
             </a>
             {% if pages["_meta"].meta.logo %}
-                <div class="logo" aria-hidden="true">
+                <div class="logo">
                     <a href="{{ "index"|link }}">
-                        <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}&w=150" alt="" />
+                        <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}&w=150" alt="logo" />
                     </a>
                 </div>
             {% endif %}
@@ -71,10 +71,17 @@
                     </a>
                 {% endfor %}
             </div>
-            <p>
-                &copyJerry Swift<br>
-                Contact: jerryswift@gmail.com Mobile: 0605712
-            </p>
+            <h2><span>Contact</span></h2>
+            <address class="c-info-box">
+                <h3 class="contact-medium">MAIL:</h3>
+                <a href="mailto:>jerryswift@gmail.com"><span>Jerryswift@gmail.com</span></a>
+                {# <h3 class="contact-medium">GITHUB:</h3>
+                <a href="https://github.com/samuelstrom93"><span>Samuelstrom93</span></a>
+                <h3 class="contact-medium">LINKEDIN:</h3>
+                <a href="https://www.linkedin.com/in/samuel-ström-57a028193/"><span>Samuel Ström</span></a> #}
+                <h3 class="contact-medium">PHONE:</h3>
+                <a href="tel:0706570198"><span>0706570198</span></a>
+            </address>
         </div>
     </div>
 

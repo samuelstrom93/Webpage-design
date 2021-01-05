@@ -48,6 +48,13 @@
     box-shadow: none;
 }
 
+
+@media (max-width: 1250px) {
+    .highlights {
+        gap: 2em;
+    }
+}
+
 @media (max-width: 992px) {
     .project-article,
     .highlights h1 {
@@ -57,5 +64,16 @@
     .highlights {
         padding: 0 2.5em;
     }
-    
+
+    .project-article {
+        width: 450px;
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .project-article {
+        width: auto;
+    }
 }

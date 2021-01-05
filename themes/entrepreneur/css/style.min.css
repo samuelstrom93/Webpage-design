@@ -6504,6 +6504,11 @@ readers do not read off random characters that represent icons */
   color: #000;
 }
 
+@media (max-width: 992px) {
+  .logo {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   #nav {
     clear: both;
@@ -6763,6 +6768,11 @@ div.topBotomBordersIn a:hover::after {
   box-shadow: none;
 }
 
+@media (max-width: 1250px) {
+  .highlights {
+    gap: 2em;
+  }
+}
 @media (max-width: 992px) {
   .project-article,
 .highlights h1 {
@@ -6771,6 +6781,16 @@ div.topBotomBordersIn a:hover::after {
 
   .highlights {
     padding: 0 2.5em;
+  }
+
+  .project-article {
+    width: 450px;
+    margin: auto;
+  }
+}
+@media (max-width: 767px) {
+  .project-article {
+    width: auto;
   }
 }
 html {
