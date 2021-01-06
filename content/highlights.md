@@ -9,9 +9,9 @@ Highlights
 
 <div class="project-article">
     <picture>
-            <source media="(min-width: 668px)" srcset="../portfolio/image/projects/CMS.jpg&w=500" alt="CMS">
-            <source media="(min-width: 376px)" srcset="../portfolio/image/projects/CMS.jpg&w=300" alt="CMS"> 
-            <img src="../portfolio/image/projects/CMS.jpg&h=300" alt="CMS">
+            <source media="(min-width: 668px)" srcset="../projekt/image/projects/CMS.jpg&w=500" alt="CMS">
+            <source media="(min-width: 376px)" srcset="../projekt/image/projects/CMS.jpg&w=300" alt="CMS"> 
+            <img src="../projekt/image/projects/CMS.jpg&h=300" alt="CMS">
         </picture>
     <h2>CMS for news</h2>
     <ul>
@@ -23,9 +23,9 @@ Highlights
 
 <div class="project-article">
     <picture>
-            <source media="(min-width: 668px)" srcset="../portfolio/image/projects/restaurant.jpg&w=350" alt="restaurant">
-            <source media="(min-width: 376px)" srcset="../portfolio/image/projects/restaurant.jpg&w=300" alt="restaurant"> 
-            <img src="../portfolio/image/projects/restaurant.jpg&w=300" alt="restaurant">
+            <source media="(min-width: 668px)" srcset="../projekt/image/projects/restaurant.jpg&w=350" alt="restaurant">
+            <source media="(min-width: 376px)" srcset="../projekt/image/projects/restaurant.jpg&w=300" alt="restaurant"> 
+            <img src="../projekt/image/projects/restaurant.jpg&w=300" alt="restaurant">
         </picture>
     <h2>Website for restaurant</h2>
     <ul>
@@ -39,9 +39,9 @@ Highlights
 
 <div class="project-article">
    <picture>
-            <source media="(min-width: 668px)" srcset="../portfolio/image/projects/wordpress_plugin.jpg&w=450" alt="wordpress plugin">
-            <source media="(min-width: 376px)" srcset="../portfolio/image/projects/wordpress_plugin.jpg&w=300" alt="wordpress plugin"> 
-            <img src="../portfolio/image/projects/wordpress_plugin.jpg&w=500" alt="wordpress plugin">
+            <source media="(min-width: 668px)" srcset="../projekt/image/projects/wordpress_plugin.jpg&w=450" alt="wordpress plugin">
+            <source media="(min-width: 376px)" srcset="../projekt/image/projects/wordpress_plugin.jpg&w=300" alt="wordpress plugin"> 
+            <img src="../projekt/image/projects/wordpress_plugin.jpg&w=500" alt="wordpress plugin">
     </picture>
     <h2>Wordpress plugin - Bookly</h2>
     <ul>
@@ -54,9 +54,9 @@ Highlights
 
 <div class="project-article">
     <picture>
-            <source media="(min-width: 668px)" srcset="../portfolio/image/projects/cryptocurrency.jpg&w=450" alt="cryptocurrency">
-            <source media="(min-width: 376px)" srcset="../portfolio/image/projects/cryptocurrency.jpg&w=300" alt="cryptocurrency"> 
-            <img src="../portfolio/image/projects/cryptocurrency.jpg&w=500" alt="cryptocurrency">
+            <source media="(min-width: 668px)" srcset="../projekt/image/projects/cryptocurrency.jpg&w=450" alt="cryptocurrency">
+            <source media="(min-width: 376px)" srcset="../projekt/image/projects/cryptocurrency.jpg&w=300" alt="cryptocurrency"> 
+            <img src="../projekt/image/projects/cryptocurrency.jpg&w=500" alt="cryptocurrency">
     </picture>
     <h2>Wordpress plugin - exchange</h2>
     <ul>
@@ -70,9 +70,9 @@ Highlights
 
 <div class="project-article">
     <picture>
-            <source media="(min-width: 668px)" srcset="../portfolio/image/projects/calculator.jpg&w=450" alt="calculator">
-            <source media="(min-width: 376px)" srcset="../portfolio/image/projects/calculator.jpg&w=300" alt="calculator"> 
-            <img src="../portfolio/image/projects/calculator.jpg&w=500" alt="Calculator">
+            <source media="(min-width: 668px)" srcset="../projekt/image/projects/calculator.jpg&w=450" alt="calculator">
+            <source media="(min-width: 376px)" srcset="../projekt/image/projects/calculator.jpg&w=300" alt="calculator"> 
+            <img src="../projekt/image/projects/calculator.jpg&w=500" alt="Calculator">
     </picture>
     <h2>Advanced calculator</h2>
     <ul>
@@ -86,9 +86,9 @@ Highlights
 
 <div class="project-article">
     <picture>
-            <source media="(min-width: 668px)" srcset="../portfolio/image/projects/tournament.jpg&w=450" alt="tournament">
-            <source media="(min-width: 376px)" srcset="../portfolio/image/projects/tournament.jpg&w=300" alt="tournament"> 
-            <img src="../portfolio/image/projects/tournament.jpg&w=500" alt="tournament">
+            <source media="(min-width: 668px)" srcset="../projekt/image/projects/tournament.jpg&w=450" alt="tournament">
+            <source media="(min-width: 376px)" srcset="../projekt/image/projects/tournament.jpg&w=300" alt="tournament"> 
+            <img src="../projekt/image/projects/tournament.jpg&w=500" alt="tournament">
     </picture>
     <h2>Tournament tracker</h2>
     <ul>

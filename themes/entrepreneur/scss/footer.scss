@@ -33,7 +33,7 @@
     background-color: $text-background;
     border-radius: 8px;
     color: #000;
-    width: 20vh;
+    width: 250px;
     margin: 0.5em 0;
     padding: 0.5em;
     gap: 0.8em;
@@ -62,21 +62,6 @@
     }
 }
 
-@media (max-width: 992px) {
-    .c-info-box {
-        width: 30vh;
-    }
-
-    .footer .social {
-        padding-left: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    .c-info-box {
-        width: 40vh;
-    }
-}
 
 
 

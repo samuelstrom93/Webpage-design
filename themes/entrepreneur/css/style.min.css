@@ -6750,7 +6750,7 @@ div.topBotomBordersIn a:hover::after {
 }
 .project-article h2 {
   text-align: center;
-  padding: 0.5em 0;
+  padding: 0.5em 0.5em;
 }
 .project-article p {
   padding: 0 1.5em 1em;
@@ -6952,7 +6952,7 @@ abbr {
   background-color: #ebf2f5;
   border-radius: 8px;
   color: #000;
-  width: 20vh;
+  width: 250px;
   margin: 0.5em 0;
   padding: 0.5em;
   gap: 0.8em;
@@ -6975,20 +6975,6 @@ abbr {
   border-bottom: 2px solid #000;
 }
 
-@media (max-width: 992px) {
-  .c-info-box {
-    width: 30vh;
-  }
-
-  .footer .social {
-    padding-left: 0;
-  }
-}
-@media (max-width: 767px) {
-  .c-info-box {
-    width: 40vh;
-  }
-}
 .about-container {
   display: grid;
   padding: 0 5em 1.5em;
@@ -7190,7 +7176,7 @@ abbr {
 .projects-link a {
   background: #a89e91;
   border-radius: 8px;
-  padding: 10px 15px;
+  padding: 10px 10px;
   color: #000;
 }
 .projects-link a:hover {
