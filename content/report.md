@@ -121,3 +121,7 @@ Jag använder mig av *protanopia*-filtret för att testa färgblindheten. Det in
 
 
 
+## UPPDRAG 4: Tema alternativt
+
+Jag var väldigt sugen på att testa en CSS grid masonry och därför skiljer sig inte highlights-sidan markant mot min tidigare sida. Däremot har den ändrats färgmässigt och med mindre detaljer. Såsom att de runda kanterna har försvunnit då det är en ny stil. 
+

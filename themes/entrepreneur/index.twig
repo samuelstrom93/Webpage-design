@@ -63,7 +63,75 @@
     <div class="main" role="main">
         <div class="index-container">
             {% if config.session.theme == "dark" %}
-                <div> Mörkt tema!</div>
+                <h1>Home</h1>
+
+                    <div class="projects-wrapper">
+                        <h1>Some of my projects</h1>
+
+                        <div class="projects">
+                            <div class="project-about">
+                                <picture>
+                                    <source media="(min-width: 668px)" srcset="../projekt/image/projects/CMS.jpg&w=350" alt="Me">
+                                    <source media="(min-width: 376px)" srcset="../projekt/image/projects/CMS.jpg&w=300" alt="Me"> 
+                                    <img src="../projekt/image/projects/CMS.jpg&w=300" alt="Me">
+                                </picture>
+                                <h2>CMS </h2>
+                                <a href="./highlights" alt="about-page">Check out</a>
+                            </div>
+                            <div class="project-about">
+                                <picture>
+                                    <source media="(min-width: 668px)" srcset="../projekt/image/projects/wordpress_plugin.jpg&w=350" alt="Me">
+                                    <source media="(min-width: 376px)" srcset="../projekt/image/projects/wordpress_plugin.jpg&w=300" alt="Me"> 
+                                    <img src="../projekt/image/projects/wordpress_plugin.jpg&w=300" alt="Me">
+                                </picture>
+                                <h2>Wordpress plugin</h2>
+                                <a href="./highlights" alt="about-page">Check out</a>
+                            </div>
+                            <div class="project-about">
+                                <picture>
+                                    <source media="(min-width: 668px)" srcset="../projekt/image/projects/restaurant.jpg&w=350" alt="Me">
+                                    <source media="(min-width: 376px)" srcset="../projekt/image/projects/restaurant.jpg&w=300" alt="Me"> 
+                                    <img src="../projekt/image/projects/restaurant.jpg&w=300" alt="Me">
+                                </picture>
+                                <h2>Website for restaurant</h2>
+                                <a href="./highlights" alt="about-page">Check out</a>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="ss-style-doublediagonal-index"></section>
+
+                    <div class="index-intro">
+                        <h1>Introduction</h1>
+                        <p>My name is Jerry Swift and i'm a freelancing web developer. I have worked with big companies in sweden such as Spotify, IKEA, Cygni and HiQ and my expertise lies in making stylish website with advanced HTML/CSS and Javascript with help of several framesworks - e.g React and Vue. 
+                        <a href="./about" alt="about-page">Read more about me </a>
+                        </p>
+                    </div>
+                    <section class="ss-style-doublediagonal-index"></section>
+
+                    <div class="contract-contact">
+                        <div class="contract-info">
+                            <h2>Contract</h2>
+                            <p>
+                                Before I take on a job it is very important to me that the job is tailored to <i>your</i> needs. Together we make sure we have proposal that suits your needs.
+                            </p>
+                            <p>Contact me and tell me about your needs and I will produce a sketch that we can discuss together and develop.</p>
+
+                            <a href="mailto:jerryswift@gmail.com">Contact me by mail</a>
+                        </div>
+
+                    <picture>
+                        <source media="(min-width: 668px)" srcset="../projekt/image/contract.jpg&w=350" alt="Me">
+                        <source media="(min-width: 376px)" srcset="../projekt/image/contract.jpg&w=300" alt="Me"> 
+                        <img src="../projekt/image/contract.jpg&w=300" alt="Me">
+                    </picture>
+
+                    </div>
+
+                </div>
+
+
+
+
             {% else %}
                 {{ content }}
             {% endif %}
@@ -83,10 +151,6 @@
             <address class="c-info-box">
                 <h3 class="contact-medium">MAIL:</h3>
                 <a href="mailto:>jerryswift@gmail.com"><span>Jerryswift@gmail.com</span></a>
-                {# <h3 class="contact-medium">GITHUB:</h3>
-                <a href="https://github.com/samuelstrom93"><span>Samuelstrom93</span></a>
-                <h3 class="contact-medium">LINKEDIN:</h3>
-                <a href="https://www.linkedin.com/in/samuel-ström-57a028193/"><span>Samuel Ström</span></a> #}
                 <h3 class="contact-medium">PHONE:</h3>
                 <a href="tel:0706570198"><span>0706570198</span></a>
             </address>

@@ -7,6 +7,8 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
 
+
+// Ta bort sen
 $background-color: #f6f1eb;
 $text-background: #ebf2f5;
 $white-background: #fff;
@@ -17,10 +19,12 @@ $footer-color: #809ba8;
 
 $background-color: #0D0D0D;
 $background-color-lighter: #1A1A1A;
+$background-color-even-lighter: #6d6d6d;
 $text-color: #E5E5E5;
 $darker-text-color: #BFBFBF;
 $white-text: #fff;
 $footer-color: #000;
+$stylish-color: #ed0000;
 
 
 
@@ -28,13 +32,13 @@ $footer-color: #000;
 
 @import 'footer-dark';
 @import 'highlights-dark';
+@import 'about-dark';
+@import 'home-dark';
 
 
 
 @import 'header';
 @import 'typography';
-@import 'about';
-@import 'home';
 @import 'report';
 
 
@@ -46,6 +50,10 @@ $footer-color: #000;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     color: $text-color;
+}
+
+img {
+    filter: grayscale(40%);
 }
 
 .main {

@@ -7,6 +7,10 @@
     float: right;
     padding: 1.5em 0 1.5em 1em;
     font-size: 2rem;
+
+    i:hover {
+        border: 2px dotted $text-color;
+    }
 }
 
 .footer h2 {
@@ -22,7 +26,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: $darker-text-color;
-    border-radius: 8px;
     width: 265px;
     margin: 0.5em 0;
     padding: 0.5em;

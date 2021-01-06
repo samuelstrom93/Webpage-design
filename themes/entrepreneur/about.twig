@@ -62,7 +62,56 @@
     </div>
     <div class="main" role="main">
             {% if config.session.theme == "dark" %}
-                <div> Mörkt tema!</div>
+                <div class="about-container">
+                    <h1>About</h1>
+                    <div class="intro">
+                        <div class="text-about">
+                        <h1>About me</h1>
+                                <p>I am developer since early childhood. I would love to get to know you and get to know your situation and how I can help you.</p>
+                                <p>If you hire me you are not getting a website like Shopify or Wix. Your website will be thoughtfully developed with you as a customer and something that is truly unique and fit your needs.</p>
+                        </div>
+                            <address class="contact-box">
+                                <h1>Contact</h1>
+                                <h2 class="contact-medium">MAIL:</h2>
+                                <a href="mailto:>jerryswift@gmail.com"><span>Jerryswift@gmail.com</span></a>
+                                <h2 class="contact-medium">GITHUB:</h2>
+                                <a href="https://github.com/samuelstrom93"><span>Samuelstrom93</span></a>
+                                <h2 class="contact-medium">LINKEDIN:</h2>
+                                <a href="https://www.linkedin.com/in/samuel-ström-57a028193/"><span>Samuel Ström</span></a>
+                                <h2 class="contact-medium">PHONE:</h2>
+                                <a href="tel:0706570198"><span>0706570198</span></a>
+                            </address>
+                    </div>
+
+                    <div class="picture">
+                    <picture>
+                        <source media="(min-width: 668px)" srcset="../projekt/image/person_doesnt_exist.jpeg&w=400" alt="Me">
+                        <source media="(min-width: 376px)" srcset="../projekt/image/person_doesnt_exist.jpeg&w=300" alt="Me"> 
+                        <img src="../projekt/image/person_doesnt_exist.jpeg&w=300" alt="Me">
+                    </picture>
+                    </div>
+
+                    <section class="ss-style-doublediagonal"></section>
+
+
+                    <div class="expertise">
+                        <h1>Experience</h1>
+                        <p>My name is Jerry Swift and i'm a freelancing web developer. I have worked with big companies in sweden such as Spotify, IKEA, Cygni and HiQ and my expertise lies in making stylish website with advanced HTML/CSS and Javascript with help of several framesworks - e.g React and Vue. 
+                        <a href="./highlights" alt="hightlights">Check out my projects </a>
+                        </p>
+                    </div>
+
+                    <div class="motivation-drive">
+                        <h1>Motivation</h1>
+                        <p>The drive comes from three wills: the will to create, the will to learn new things and the will to influence. By influence I mean to influence the world so that it becomes a little, a little better. This applies from students who do not have the strength to read the heavy texts on wikipedia, to everyone who has ever thought "Shit how hard it is to switch between speakers and headphones. It's like seven clicks in windows, I wish it went with one click! ". Everything that makes others a little, a little happier makes me happy. </p>
+                    </div>
+                    
+                        <section class="ss-style-doublediagonal"></section>
+
+                    <p class="report-text">Check out my <strong><a href="./report" alt="report page" class="report-link">report page</a></strong> for more information about my design choices.</p>
+
+                </div>
+            </div>
             {% else %}
                 {{ content }}
             {% endif %}
@@ -81,10 +130,6 @@
             <address class="c-info-box">
                 <h3 class="contact-medium">MAIL:</h3>
                 <a href="mailto:>jerryswift@gmail.com"><span>Jerryswift@gmail.com</span></a>
-                {# <h3 class="contact-medium">GITHUB:</h3>
-                <a href="https://github.com/samuelstrom93"><span>Samuelstrom93</span></a>
-                <h3 class="contact-medium">LINKEDIN:</h3>
-                <a href="https://www.linkedin.com/in/samuel-ström-57a028193/"><span>Samuel Ström</span></a> #}
                 <h3 class="contact-medium">PHONE:</h3>
                 <a href="tel:0706570198"><span>0706570198</span></a>
             </address>
