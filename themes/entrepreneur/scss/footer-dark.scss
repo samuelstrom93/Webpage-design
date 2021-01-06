@@ -1,0 +1,52 @@
+.footer {
+    background: $footer-color;
+    color: $text-color;
+}
+
+.footer .social {
+    float: right;
+    padding: 1.5em 0 1.5em 1em;
+    font-size: 2rem;
+}
+
+.footer h2 {
+    margin: 0.5em 0 0;
+
+    span {
+        border-bottom: 2px solid #fff;
+    }
+}
+
+.c-info-box {
+    font-style: normal;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $darker-text-color;
+    border-radius: 8px;
+    width: 265px;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    gap: 0.8em;
+    align-items: center;
+
+    h3 {
+        color: #000;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    span {
+        color: #000;
+        border-bottom: 1px dotted rgba(52, 53, 53, 0.7);
+    }
+
+    span:hover {
+        border-bottom: 2px solid #000;
+    }
+}
+
+
+
+

@@ -6,10 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "watch": "sass entrepreneur/scss/style.scss entrepreneur/css/style.css --no-source-map --watch",
-    "watch-min": "sass entrepreneur/scss/style.scss entrepreneur/css/style.min.css --no-source-map --watch",
-    "style": "sass entrepreneur/scss/style.scss entrepreneur/css/style.css --no-source-map",
-    "style-min": "sass entrepreneur/scss/style.scss entrepreneur/css/style.min.css --no-source-map --style compressed"
+    "watch": "sass entrepreneur/scss/style.scss:entrepreneur/css/style.css entrepreneur/scss/style-dark.scss:entrepreneur/css/style-dark.css --no-source-map --watch",
+      "watch-min": "sass entrepreneur/scss/style.scss:entrepreneur/css/style.min.css entrepreneur/scss/style-dark.scss:entrepreneur/css/style-dark.min.css --no-source-map --watch --style compressed",
+      "style": "npm run style-light && npm run style-dark",
+      "style-min": "npm run style-light-min && npm run style-dark-min",
+      "style-dark": "sass entrepreneur/scss/style-dark.scss entrepreneur/css/style-dark.css --no-source-map",
+      "style-dark-min": "sass entrepreneur/scss/style-dark.scss entrepreneur/css/style-dark.min.css --no-source-map --style compressed",
+      "style-light": "sass entrepreneur/scss/style.scss entrepreneur/css/style.css --no-source-map",
+      "style-light-min": "sass entrepreneur/scss/style.scss entrepreneur/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",

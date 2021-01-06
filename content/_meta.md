@@ -10,9 +10,9 @@ Social:
       url: https://www.linkedin.com/in/samuel-ström-57a028193/
       icon: fab fa-linkedin
 
-    # - title: Dark Mode
-    #   url: ?action=theme
-    #   icon: fas fa-moon
+    - title: Dark Mode
+      url: ?action=theme
+      icon: fas fa-moon
 
     # - title: Destroy Session
     #   url: ?action=session_destroy
