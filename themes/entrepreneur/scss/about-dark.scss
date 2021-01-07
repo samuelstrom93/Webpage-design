@@ -35,7 +35,7 @@
             }
 
             span {
-                color: $text-background;
+                color: $text-color;
                 border-bottom: 1px dotted #fff;
             }
         
@@ -126,14 +126,9 @@ section::after {
     color: $stylish-color;
 }
 
-.expertise {
-    // grid-column: span 2;
+.technologies {
     width: 500px;
     justify-self: center;
-
-    h1 {
-        text-decoration: underline;
-    }
 
     a {
         display: flex;
@@ -141,7 +136,7 @@ section::after {
         color: $stylish-color;
         border: 1px solid $text-color;
         padding: 0.5em 1em;
-        margin-left: 18em;
+        margin: 1em 0 0 18.5em;
         font-weight: bold;
     }
 
@@ -152,46 +147,12 @@ section::after {
 }
 
 .motivation-drive {
-    margin-top: -2em;
     width: 500px;
     justify-self: center;
+
 }
 
-// .motivation-container {
-//     background-color: $white-background;
-//     width: 425px;
-//     padding: 0 1em 1em;
-//     border-radius: 12px;
-//     border: 1px solid #000;
-//     justify-self: center;
-//     align-self: center;
 
-//     h1 {
-//         text-align: center;
-//     }
-// }
-
-// .sb.sb-about {
-//     grid-column: span 2;
-//     width: 100%;
-// }
-
-// .report-link {
-//     color: #000;
-//     text-decoration: underline;
-// }
-
-// .report-link:hover {
-//     font-size: 1.05em;
-//     border-bottom: 2px solid #000;
-//     text-decoration: none;
-//     color: #000;
-// }
-
-
-// .report-text {
-//     justify-self: center;
-// }
 
 // @media (max-width: 992px) {
 //     .about-container {

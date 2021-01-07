@@ -125,3 +125,12 @@ Jag använder mig av *protanopia*-filtret för att testa färgblindheten. Det in
 
 Jag var väldigt sugen på att testa en CSS grid masonry och därför skiljer sig inte highlights-sidan markant mot min tidigare sida. Däremot har den ändrats färgmässigt och med mindre detaljer. Såsom att de runda kanterna har försvunnit då det är en ny stil. 
 
+Jag hittade mycket inspo ifrån Monclers hemsida. Den tycker jag var häftig. Mycket på grund av den hade mörka färger som anspelar på mystik och lyx. 
+
+Använde cimage <code>&convolve=darken</code> istället för att använda greyscale.
+
+
+Knappt gjort några skillnader i typografi-sass-modulen.
+
+Gjort en kopia för temat på t.ex. footer och ändrat namnet till footer-dark. Sedan har jag jobbat igenom och återanvänt mindre delar kod vid behov men mestadels tagit bort och skrivit ny kod för att passa det alternativa temat. 
+

@@ -1,5 +1,5 @@
 ---
-Logo: image/logo_1.png
+Logo: image/logo_2.png
 Tagline: Web entrepreneur.
 Social:
     - title: Link to Github
@@ -14,7 +14,4 @@ Social:
       url: ?action=theme
       icon: fas fa-moon
 
-    # - title: Destroy Session
-    #   url: ?action=session_destroy
-    #   icon: fas fa-trash-alt
 ---
