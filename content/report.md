@@ -8,6 +8,8 @@ Hidden: true
 Report
 ==========================
 
+## Uppdrag 2: Tema
+
 ## Färgpaletten och valda färger.
 
 I tidigare kmom när vi analyserade så använde jag mig av Hermés webbplats. Där hittade jag en bakgrund som jag gillade väldigt mycket. Den färgen blev min grundbult och syns i färgpaletten nedan med en svart ram runtom. Det är min huvudsakliga bakgrundsfärg i originaltemat. För att hitta färger som kompletterade den så valde jag att använda mig av Adobes färgsnurra och använda komplementär som färgharmoni och matade in färgen. Utifrån det fick jag färger som jag använder i variabler i scss-filen style.
@@ -23,11 +25,6 @@ I tidigare kmom när vi analyserade så använde jag mig av Hermés webbplats. D
 </td></tr>
 </table>
 
-
-<div class="sb sb-home">
-      <small></small>
-      <hr class="section-break-3" />
-</div>
 
 ## Typografin, designprinciper och designelement
 Beskriv typografin, designprinciper och designelement som du använt.
@@ -74,12 +71,6 @@ Jag klumpade ihop dessa designprinciper då de i mitt projekt haft mycket gemens
 För att ha en konsekvent design och repetition som gör att man känner igen vissa företeelser mellan sidor har jag som nämnt återanvänt färger men också färger för länkar, bakgrunder och runda kanter på de flesta div-elementen så att användaren känner igen sig och förstår vad vissa knapptryck gör. Användaren ska inte behöva tänka för mycket helt enkelt utan designen ska vara konsekvent och förståelig.
 
 
-
-<div class="sb sb-home">
-      <small></small>
-      <hr class="section-break-3" />
-</div>
-
 ## Känsla med webbplatsen.
 
 Jag valde kund 3 i uppgiftsbeskrivningen som är **egenföretagaren Bew Gorp**. Han har ett fokus på webbutveckling och alla dess aspekter och sidan som jag gjort i projektet ska vara en typ av CV-webbplats eller portfoliosidan för att kunna visa upp för sina potentiella kunder.
@@ -90,15 +81,24 @@ En viktig del av en portfoliosida är fokus på rätt saker. Det är viktigt att
 
 Då en webbutvecklare bör förmedla ett kreativt intryck har jag använt mig av bilder för att anspela på färger. T.ex. flash-bilden högst uppe i navigationsfältet är massa färger och en av bilderna på about-sidan är rollers och massa färger. Det ska ge ett intrycket av kreativitet som potentiella kunder förhoppningsvis ska gilla. 
 
-<div class="sb sb-home">
-      <small></small>
-      <hr class="section-break-3" />
-</div>
+
+
+
 
 ## SASS 
 
 Jag har försökt att göra det så enkelt som möjligt med SASS-koden. Delar av koden som inte skiljer sig emellan vilka sida man är inne på såsom header, nav, footer, typography och olika style är egna sass-moduler som berör namnets del. Sedan för varje sida har jag skapat en egen sass-modul så att ändringar i about görs i report.scss. På så sätt är det enkelt att hitta rätt ställe att justera koden för rätt ändringar i designen. I t.ex. header-modulen har jag importerat nav-delen som är en mindre del av headern för att ännu mer modularisera koden och göra den mer läsbar när jag vill göra ändringar.
 
+
+<div class="sb sb-home">
+      <small></small>
+      <hr class="section-break-3" />
+</div>
+
+<section class="ss-style-doublediagonal-index"></section>
+
+
+## Uppdrag 3: Responsivitet och tillgänglighet
 
 ## Responsivitet
 
@@ -119,6 +119,12 @@ När jag testade att göra Lighthouse-test för tillgängligheten så var alla s
 
 Jag använder mig av *protanopia*-filtret för att testa färgblindheten. Det innebär att bilderna med olika färger förmedlar inte så mycket färger som man vill i det färgblinda läget självfallet, men det är en begränsning man får jobba med. Eftersom det jag vill förmedla med färger och kreativitetet borde ändå kunna komma fram i bland annat bilden med rollers där man verkligen förstår att det är olika färger som webbutvecklaren kan använda sig av. I övrigt är kontrasterna tillräckligt tydliga och inget särskilt sticker ut som svårt att se eller förstå när man jämför färgblindfiltret.  
 
+<section class="ss-style-doublediagonal-index"></section>
+
+<div class="sb sb-home">
+      <small></small>
+      <hr class="section-break-3" />
+</div>
 
 
 ## UPPDRAG 4: Tema alternativt

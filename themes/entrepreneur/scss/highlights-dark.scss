@@ -69,13 +69,18 @@
 
 @media (max-width: 992px) {
     .highlights {
-        grid-template-columns: none;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .project {
         width: 425px;
         margin: auto;
     }
+
+    .highlights h1 {
+        grid-column: 1;
+    }
+
 }
 
 
@@ -87,4 +92,5 @@
     .highlights {
         margin: 0 2.5em;
     }
+    
 }

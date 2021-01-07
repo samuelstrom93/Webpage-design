@@ -63,5 +63,16 @@
 }
 
 
+@media (max-width: 767px) {
+    .footer .social {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .social {
+        padding: 0 0.5em 0 0;
+    }
+
+}
 
 
