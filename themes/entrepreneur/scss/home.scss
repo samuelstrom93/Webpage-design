@@ -30,15 +30,16 @@
 
     h1 {
         text-align: center;
-        margin: 0em 1em 0.3em;
+        margin: 0 1em 0.3em;
     }
 
     a {
-        display: inline-flex;
+        display: block;
         background: $link-background;
         border-radius: 8px;
         padding: 10px 20px;
         margin: 1em 0 0;
+        width: 220px;
         font-size: 1.1em;
         color: #000;
         font-weight: bold;
@@ -102,7 +103,7 @@
     a {
         background: $link-background;
         border-radius: 8px;
-        padding: 10px 10px;
+        padding: 10px;
         color: #000;
     }
 

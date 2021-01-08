@@ -1,15 +1,15 @@
 .highlights {
     margin: 0 10em;
     display: grid;
-    grid-gap: 2em; 
-    grid-template-columns: repeat( 3, minmax( 250px, 1fr ) ); 
+    grid-gap: 2em;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     grid-auto-rows: auto;
 
     h1 {
         grid-column: span 3;
         text-align: center;
     }
-  }
+}
 
 .project {
     background-color: $background-color-lighter;
@@ -26,7 +26,7 @@
 
     h2 {
         text-align: center;
-        padding: 0.5em 0.5em;
+        padding: 0.5em;
     }
 
     picture img {
@@ -35,15 +35,15 @@
 }
 
 .project-article {
-      grid-row-end: span 12;
-  }
+    grid-row-end: span 12;
+}
 
 .project-article-1 {
     grid-row-end: span 8;
 }
 
 .project-article-2 {
-     grid-row-end: span 12;
+    grid-row-end: span 12;
 }
 
 .project-article-3 {

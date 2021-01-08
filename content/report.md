@@ -27,7 +27,6 @@ I tidigare kmom när vi analyserade så använde jag mig av Hermés webbplats. D
 
 
 ## Typografin, designprinciper och designelement
-Beskriv typografin, designprinciper och designelement som du använt.
 
 **Typografi**
 
@@ -129,14 +128,99 @@ Jag använder mig av *protanopia*-filtret för att testa färgblindheten. Det in
 
 ## UPPDRAG 4: Tema alternativt
 
-Jag var väldigt sugen på att testa en CSS grid masonry och därför skiljer sig inte highlights-sidan markant mot min tidigare sida. Däremot har den ändrats färgmässigt och med mindre detaljer. Såsom att de runda kanterna har försvunnit då det är en ny stil. 
+## Arbete och implementation
 
-Jag hittade mycket inspo ifrån Monclers hemsida. Den tycker jag var häftig. Mycket på grund av den hade mörka färger som anspelar på mystik och lyx. 
-
-Använde cimage <code>&convolve=darken</code> istället för att använda greyscale.
+Istället för att jobba mot markdown-filer i <code>{{ content }}</code> inuti twig-filerna valde jag att göra en if-sats mot vilket tema som är valt. När det vanliga temat är valt så laddas <code>{{ content}}</code>, dvs markdown-filerna, medan om det alternativa är valt genom månen längst nere så laddas inte markdown-filerna utan HTML-kod direkt inuti <code>"main"-diven</code>, dvs sidans innehåll. Då tappade jag tyvärr smidigheten som finns markdown-filerna men det var det enda lösningen jag hittade för att separera de olika temans HTML- och CSS-kod.
 
 
-Knappt gjort några skillnader i typografi-sass-modulen.
+## Färgpaletten och valda färger.
 
-Gjort en kopia för temat på t.ex. footer och ändrat namnet till footer-dark. Sedan har jag jobbat igenom och återanvänt mindre delar kod vid behov men mestadels tagit bort och skrivit ny kod för att passa det alternativa temat. 
+På samma sätt med första temat använde jag mig av Adobes färgsnurra och en existerande hemsida för inspiration - Monclers hemsida. Temat blev en typ av dark mode men som passade kravet och hade därför egna designprinciper och skiljde sig markant från det första temat. 
+
+För att välja färgpaletten tog jag en bild på Monclers startsida och matade in i Adobes "extrahera tema" (finns tillgänglig på sidan för Adobes färgsnurra) och fick ut flera färger jag gillade. Här valde jag inte att mata in den för att skapa någon färgharmoni utan jag använda dessa färger direkt från Monclers hemsida för att passa in på min sida. Jag la till några till toner av den mörka färgen för att komplettera mer. Om jag skulle försöka hitta en färgharmoni för mina färger skulle jag säga att den rör mot monokromt med en touch av en mer stylish färg i form av dena röda. Den hittade jag på första bilden jag matade in i "extrahera temat" och var en färg jag gillade väldigt mycket. Till en början hade jag den för knappar som var särskilt viktiga på hemsidan såsom att "contact me" och liknande men den fall bort i tillgängligheten för Google Lighthouse när den inte hade tillräcklig kontrast mot bakgrunden vilket var synd men inget jag kunde göra något åt.
+
+<p><strong>Färgpalett</strong></p>
+<table style="border-spacing: 4px; border-collapse: separate">
+<tr>
+<td style="height: 50px; width: 50px; border: 1px #fff solid; background-color: #0D0D0D">
+</td><td style="height: 50px; width: 50px; background-color: #000">
+</td><td style="height: 50px; width: 50px; background-color: #1A1A1A">
+</td><td style="height: 50px; width: 50px; background-color: #6d6d6d">
+</td><td style="height: 50px; width: 50px; background-color: #BFBFBF">
+</td><td style="height: 50px; width: 50px; background-color: #E5E5E5">
+</td><td style="height: 50px; width: 50px; background-color: #fff">
+</td><td style="height: 50px; width: 50px; background-color: #ed0000">
+</td></tr>
+</table>
+
+## Typografin, designprinciper och designelement
+
+**Typografi**
+
+Jag valde en serif-font för rubriker - **Playfair** som jag hittade på Google fonts hemsida som jag gillade. Den sticker ut mer och passar enligt mig för rubriker. För brödtext använde jag mig av **Roboto** som jag gillar. Det är sans serif-font jag tycker ser bra ut och passade det mörka temat samt är enkelt att läsa.
+
+**Designprinciper**
+
+*Rörelse*
+
+Jag har använt mig av rörelse för navigationsfältet med två linjer som går in för att ge hemsidan lite liv samt vid projekten så vid <code>hover</code> så förstoras bildas. Det ger hemsidan ett mer livligt och häftigt intryck vilket är något jag försöker förmedla även med färgerna. 
+
+*Kontrast* 
+
+Eftersom jag använder en mörk färg och har vit font blir det tydliga kontraster. I övrigt på grund av det mörka temat så finns det inte lika mycket kontraster. På alla bilder har jag lagt <code>filter: greyscale(40%)</code> för att bilderna inte ska sticka ut alltför mycket utan naturligt smälta in med sidan. 
+
+Jag testade även att använda mig av cimages <code>&convolve=darken</code> istället för att använda greyscale på flashbilden.
+
+
+*Inraming*, *linjer* och *styrning*
+
+På home-sidan har jag börjat med att först visa mina projekt för att den potentiella kunden ska få en snabb anblick på vilka typ av projekt jag gjort och förstå mina kunskaper. Sedan har jag som nästa element använt avskiljare (linjer) för att göra det enklare att överblicka och separera sektion. I nästa sektion har jag centrerat texten i ett ensamt stycke för att en introduction av mig är en viktig del för en potentiell kund. Här har jag både använt mig av styckets flera designprinciper för att få kunden att kolla hitåt för att det är viktig information som jag vill förmedla till kunden. 
+
+*Hierarki*
+
+Jag har inte jobbat mycket direkt med hierarkier men indirekt blir det alltid att man jobbar med det. T.ex. när man använder sig av en h1 och sedan en h2 så har man en underordnad hierarki som kan vara en textbox. Sedan har jag använt mig av header, content och en footer vilket kan vara en typ av hierarkistruktur.
+
+*Negativt utrymme*
+
+Med större utrymme och mer negativt utrymme mellan de olika html-elementen blir det både enklare att överblicka. Jag skulle säga att denna designprincip även löper in i linjer-principen där det handlar om att göra det läsbart och bryta av element mot varandra för att enklare se. Jag skulle säga att det är ganska mycket negativt utrymme på alla mina tre sidor och det är för att det inte ska se rörigt ut och att viktig information som jag vill förmedla ska vara enkel att hitta. Hade jag haft element överallt och inget negativt utrymme hade det varit svårt för mig att få den potentiella kundens uppmärksamhet.
+
+*Balans*
+
+På mina tre sidor har jag försökt hitta väga upp element till höger och vänster för att få en mer behaglig översikt. T.ex. på förstasidan längst nere har jag text till vänster och en bild till höger för att hela utrymmet ska användas och inte lämna alltför mycket negativt utrymme.
+
+
+*Repetition*
+
+För att koppla ihop flera individuella element har jag använt mig av en röd färg. Den syns när man <code>:hover</code> element och markeras vilken sida man är inne på i navigationsfältet. Det är en liten touch som jag gillar och som gör att hemsidan för en egen stylish touch som både sticker ut och igenkännande. jag hade gärna velat ha den på vissa element för att det är särskilt viktiga. T.ex. "Contact me by mail"-länken men det funkade inte kontrastmässigt enligt Lighthouse. 
+
+På samma sätt med den röda färgern har jag försökt vara konsekvent med knapparna som har en svart vit ram runtom sig och är väldigt enkel i sin design men som tydlig visar att det är en knapp.
+
+
+*Skala* och *grid*
+
+På min highlights-sidan gjorde jag om min tidigare grid som var symmetriskt med rundande kanter till att istället vara en typ av grid-masonry. Det är något jag hade sett på hemsidor tidigare och var sugen att testa på. Så på highlights-sidan har jag celler som är olika långa då jag använt mig av <code>grid-row-end: span x</code> för att förlänga dem. Jag blev nöjd med resultatet och det ser lite mer raffinerat ut jämfört med om griden hade varit helt symmetrisk. På grund av masonry så kan man säga att jag använt mig av olika skalor då cellerna är av olika storlek.
+
+## Känsla med det alternativa temat
+
+Jag har som ovanstående information klargjort använt mig av en typ av mörkt tema men som även skiljer sig markant med designprinciper från det vanliga temat. Jag hittade inspirationen mycket ifrån Monclers hemsida. Moncler är ett lyxvarumärke och deras hemsida ska osa lyx och premiumkänsla och det tycker jag att de uppnår. Det gör de med hjälp av mycket svarta färger och en häftig typografi. Så det jag ville uppnå med temat är att få potentiella kunder att få en wow-känsla och känna att jag vill ha en liknande webbplats för locka dennes kunder. På så sätt kompletterar det vanliga temat som är mer ordinärt och minimalistiskt jämfört med detta tema som är mer bombastiskt och sticker ut mer tycker jag. Dvs. Jerry når ut till flera kundgrupper som den kan tänka sig att anställa honom.
+
+Jag har likt det vanliga temat försökt att accentuera viktig information såsom erfarenhet och kontakt till honom genom inramning och liknande designprinciper för att det ska vara enkelt för användarna att hitta denna viktiga information.
+
+## SASS
+
+När jag började arbeta med SASS-koden för mitt alternativa tema och gjorde jag en kopia på respektive modul. T.ex. about-modulen - about.scss -> about-dark.scss. Sedan sparade jag den sass-koden jag kunde återanvända eller kommenterade bort den. Sen i samband med att jag utvecklade about-sidan så la jag antingen till ny SASS-kod, använde mig av den bortkommenterade koden eller tog inspiration från dessa för att skapa ny.
+
+Genom att återanvända gammal kod eller ta inspiration ifrån kunde jag snabbare utveckla mina nya sidor. Jag har på samma sätt jobbat med att bryta ut sidor till egna moduler och i min "style-dark.scss" har jag gjort nya variabler med nya färger som jag sedan kan applicera på all text i hela sidan med hjälp av asterisk.
+
+
+## Responsivitet och tillgänglighet
+
+*Responsivitet*
+
+Responsiviteten har jag arbetat med på samma sätt för det vanliga temat. Här använder jag mig av <code>grid-column: span x</code> och ändrar antal kolumner till ett så att innehållet centreras och kan rymma på den mindre skärmen. Jag gjorde även om lite i footern så att det skulle se lite bättre och passa in mer med kontaktinfo och ikonerna. Nu är ikonerna på vertikalen istället för horisontellt vid mobilt användande.  
+
+*Tillgänglighet*
+
+Tillgänglighet är 100% på samma sätt som första temat.
+
 

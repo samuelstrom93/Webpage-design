@@ -86,7 +86,7 @@
     a {
         display: flex;
         justify-content: flex-end;
-        color: $stylish-color;
+        color: $text-color;
         border: 1px solid $text-color;
         padding: 0.5em 1em;
         margin-left: 13.5em;
@@ -136,25 +136,21 @@
 
 .ss-style-doublediagonal-index::before,
 .ss-style-doublediagonal-index::after {
-  top: 0;
-  left: -25%;
-  z-index: -1;
-  width: 125%;
-  height: 75%;
-  background: inherit;
-  -webkit-transform: rotate(-2deg);
-  transform: rotate(-2deg);
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 125%;
+    height: 75%;
+    background: inherit;
+    transform: rotate(-2deg);
+    transform-origin: 0 0;
 }
 
 .ss-style-doublediagonal-index::before {
-  height: 50%;
-  background: $background-color-even-lighter;
-  -webkit-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-  -webkit-transform-origin: 3% 0;
-  transform-origin: 3% 0;
+    height: 50%;
+    background: $background-color-even-lighter;
+    transform: rotate(-3deg);
+    transform-origin: 3% 0;
 }
 
 
@@ -196,9 +192,9 @@
 
     .contract-info a,
     .index-intro a {
-    margin: 1em 1.5em 0 1.5em;
-    text-align: center;
-    justify-content: center;
+        margin: 1em 1.5em 0;
+        text-align: center;
+        justify-content: center;
     }
 
     .ss-style-doublediagonal-index {

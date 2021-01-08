@@ -9,13 +9,6 @@
         justify-self: center;
     }
 
-    picture {
-        justify-self: center;
-
-        img {
-            border-radius: 16px;
-        }
-    }
 
     li {
         margin: 0.4em 0;
@@ -42,10 +35,10 @@
         width: 425px;
         background-color: $text-background;
         justify-self: center;
+    }
 
-        h1 {
-            text-align: center;
-        }
+    .intro h1 {
+        text-align: center;
     }
 }
 

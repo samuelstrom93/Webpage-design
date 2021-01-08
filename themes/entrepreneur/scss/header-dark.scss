@@ -1,4 +1,3 @@
-@import 'nav-dark';
 
 
 .header {
@@ -10,7 +9,7 @@
     padding: 0 2em;
 }
 
-div.topBotomBordersIn a {
+.top-bottom-borders-in a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
@@ -21,30 +20,30 @@ div.topBotomBordersIn a {
     font-size: 1.2em;
 }
 
-div.topBotomBordersIn a:before,
-div.topBotomBordersIn a:after {
+.top-bottom-borders-in a::before,
+.top-bottom-borders-in a::after {
     position: absolute;
-    left: 0px;
+    left: 0;
     width: 100%;
     height: 2px;
     background: $stylish-color;
-    content: " ";
+    content: ' ';
     opacity: 0;
     transition: all 0.3s;
 }
 
-div.topBotomBordersIn a:before {
+.top-bottom-borders-in a::before {
     top: 0;
     transform: translateY(-10px);
 }
 
-div.topBotomBordersIn a::after {
+.top-bottom-borders-in a::after {
     bottom: 0;
     transform: translateY(10px);
 }
 
-div.topBotomBordersIn a:hover::before,
-div.topBotomBordersIn a:hover::after {
+.top-bottom-borders-in a:hover::before,
+.top-bottom-borders-in a:hover::after {
     opacity: 1;
     transform: translateY(0);
 }
@@ -118,12 +117,11 @@ div.topBotomBordersIn a:hover::after {
     display: none;
 }
 
-/* IE8 + IE9 clearfix */
 
-.header>.container::after {
-    content: '';
-    display: block;
-    clear: both;
+
+@media (max-width: 992px) {
+    .logo {
+        display: none;
+    }
+
 }
-
-

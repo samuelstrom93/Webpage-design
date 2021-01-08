@@ -9,11 +9,11 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 
 
-$background-color: #0D0D0D;
-$background-color-lighter: #1A1A1A;
+$background-color: #0d0d0d;
+$background-color-lighter: #1a1a1a;
 $background-color-even-lighter: #6d6d6d;
-$text-color: #E5E5E5;
-$darker-text-color: #BFBFBF;
+$text-color: #e5e5e5;
+$darker-text-color: #bfbfbf;
 $white-text: #fff;
 $footer-color: #000;
 $stylish-color: #ed0000;
@@ -103,8 +103,6 @@ body {
 .widescreen .container {
     max-width: 72em;
 }
-
-/* very ugly overflow fix, avoid this whenever possible! */
 
 .main .container {
     overflow-x: auto;

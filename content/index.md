@@ -10,7 +10,7 @@ Home
 
 <div class="index-intro">
     <h1>Experience</h1>
-    <p>My name is Jerry Swift and i'm a freelancing web developer. I have worked with big companies in sweden such as Spotify, IKEA, Cygni and HiQ and my expertise lies in making stylish website with advanced HTML/CSS and Javascript with help of several framesworks - e.g React and Vue. 
+    <p>My name is Jerry Swift and i'm a freelancing web developer. I have worked with big companies in Sweden such as Spotify, IKEA, Cygni and HiQ and my expertise lies in making stylish website with advanced HTML/CSS and Javascript with help of several framesworks - e.g React and Vue. 
     <a href="./about" alt="about-page">Read more about me </a>
     </p>
 </div>
