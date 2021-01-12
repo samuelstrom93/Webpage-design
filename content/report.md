@@ -82,8 +82,6 @@ Då en webbutvecklare bör förmedla ett kreativt intryck har jag använt mig av
 
 
 
-
-
 ## SASS 
 
 Jag har försökt att göra det så enkelt som möjligt med SASS-koden. Delar av koden som inte skiljer sig emellan vilka sida man är inne på såsom header, nav, footer, typography och olika style är egna sass-moduler som berör namnets del. Sedan för varje sida har jag skapat en egen sass-modul så att ändringar i about görs i report.scss. På så sätt är det enkelt att hitta rätt ställe att justera koden för rätt ändringar i designen. I t.ex. header-modulen har jag importerat nav-delen som är en mindre del av headern för att ännu mer modularisera koden och göra den mer läsbar när jag vill göra ändringar.
@@ -95,35 +93,6 @@ Jag har försökt att göra det så enkelt som möjligt med SASS-koden. Delar av
 </div>
 
 <section class="ss-style-doublediagonal-index"></section>
-
-
-## Uppdrag 3: Responsivitet och tillgänglighet
-
-## Responsivitet
-
-Jag har primärt arbetat med Firefox som webbläsare men också Chrome för bl.a. Lighthouse. För att jobba med responsiviteten har jag, utöver vanliga webbklienten, jobbat med Ipad och Iphone X/XS i Firefox dev tools. På alla mina sidor har jag använt mig av CSS-grid för att presentera innehållet vilket gjort att arbetat med att göra webbsidan responsiv är tämligen enkelt. Där har jag arbetat med media-queries för <code>max-width: 992px</code> och <code>max-width: 767px</code> för att få med nämnda enheter ovan. Jag har på något ställe lagt till en media-query på 1200 px för att gap i griden ska te sig bättre. I 992px media-query så har jag börjat använda mig av att elementen i griden använder sig av t.ex. <code>grid-column: span 3;</code> om griden har tre kolumner för att fylla ut hela då elementen annars hade komprimerats ihop och blivit oläsbart.
-
-Jag har använt mig av flexbox för någon enstaka div då det är smidigt med att positionera elementen där man vill inuti en div.
-
-Ingen av sidorna har någon horisontell scrollbar utan anpassas lämpligt i griden.
-
-I alla bilder som används på sidorna har jag använt mig av cimage och picture-element med <code>srcset</code> för lämpliga bildhantering för mindre enheter.
-
-
-## Tillgänglighet 
-
-När jag testade att göra Lighthouse-test för tillgängligheten så var alla sidor redan mellan 95-100 så det var inte så mycket som behövdes göra. Det som behövdes ändras var bland annat att lägga till <code>html lang</code> i html-elementet och ändra om dold tab-element <code>aria-hidden="true"</code> samt <code>tabindex</code> med högre värde än ett. Sedan har jag har sedan tidigare fått erfara att hierarkier med rubriker (h1, h2 och h3) behövde komma i ordning på sidan. Jag har t.ex. försökt använda det här i mina markdown-filer med att ha rubriker och sedan en underrubrik som h2 eller h3 och sedan längre ner på sidan en h1 igen men för att tydliggöra ett nytt ämne/område men det har inte Lighthouse gillat så därför har jag jobbat med fetmarkering eller kursiv text för detta istället.
-
-*Färgblindhet*
-
-Jag använder mig av *protanopia*-filtret för att testa färgblindheten. Det innebär att bilderna med olika färger förmedlar inte så mycket färger som man vill i det färgblinda läget självfallet, men det är en begränsning man får jobba med. Eftersom det jag vill förmedla med färger och kreativitetet borde ändå kunna komma fram i bland annat bilden med rollers där man verkligen förstår att det är olika färger som webbutvecklaren kan använda sig av. I övrigt är kontrasterna tillräckligt tydliga och inget särskilt sticker ut som svårt att se eller förstå när man jämför färgblindfiltret.  
-
-<section class="ss-style-doublediagonal-index"></section>
-
-<div class="sb sb-home">
-      <small></small>
-      <hr class="section-break-3" />
-</div>
 
 
 ## UPPDRAG 4: Tema alternativt
@@ -213,14 +182,6 @@ När jag började arbeta med SASS-koden för mitt alternativa tema och gjorde ja
 Genom att återanvända gammal kod eller ta inspiration ifrån kunde jag snabbare utveckla mina nya sidor. Jag har på samma sätt jobbat med att bryta ut sidor till egna moduler och i min "style-dark.scss" har jag gjort nya variabler med nya färger som jag sedan kan applicera på all text i hela sidan med hjälp av asterisk.
 
 
-## Responsivitet och tillgänglighet
 
-*Responsivitet*
-
-Responsiviteten har jag arbetat med på samma sätt för det vanliga temat. Här använder jag mig av <code>grid-column: span x</code> och ändrar antal kolumner till ett så att innehållet centreras och kan rymma på den mindre skärmen. Jag gjorde även om lite i footern så att det skulle se lite bättre och passa in mer med kontaktinfo och ikonerna. Nu är ikonerna på vertikalen istället för horisontellt vid mobilt användande.  
-
-*Tillgänglighet*
-
-Tillgänglighet är 100% på samma sätt som första temat.
 
 
