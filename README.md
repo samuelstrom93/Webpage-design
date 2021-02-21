@@ -16,7 +16,7 @@ En central del av projektet har varit att jobba med tillgänglighet och här har
 För att optimera laddtider har jag använt mig av PageSpeed Insights för att analysera. Bland anant genom att minifiera CSS-filer samt croppa bilder för mindre storlekar.
 
 
-## Hemsidan
+## Hemsidan - ett axplock av bilder
 
 <img width="964" src="https://github.com/samuelstrom93/Webpage-design/blob/main/Resources/introduction.png">
 
