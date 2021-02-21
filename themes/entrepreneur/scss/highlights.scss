@@ -1,79 +1,77 @@
 .highlights {
-    display: grid;
-    padding: 0 7.5em 1.5em;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4.5em 6em;
+  display: grid;
+  padding: 0 7.5em 1.5em;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.5em 6em;
 
-    h1 {
-        grid-column: span 3;
-        justify-self: center;
-    }
+  h1 {
+    grid-column: span 3;
+    justify-self: center;
+  }
 }
 
 .project-article {
-    background-color: $link-background;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: transform 0.4s;
-    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: $link-background;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.4s;
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
 
-    img {
-        border-radius: 12px 12px 0 0;
-        height: 300px;
-        width: 450px;
-    }
+  img {
+    border-radius: 12px 12px 0 0;
+    height: 300px;
+    width: 450px;
+    object-fit: cover;
+  }
 
-    h2 {
-        text-align: center;
-        padding: 0.5em;
-    }
+  h2 {
+    text-align: center;
+    padding: 0.5em;
+  }
 
-    p {
-        padding: 0 1.5em 1em;
-    }
+  p {
+    padding: 0 1.5em 1em;
+  }
 
-    ul {
-        width: 85%;
-        margin: 1em auto;
-    }
+  ul {
+    width: 85%;
+    margin: 1em auto;
+  }
 
-    li {
-        margin: 0.3em auto;
-    }
-
+  li {
+    margin: 0.3em auto;
+  }
 }
 
 .project-article:hover {
-    transform: scale(1.05);
-    box-shadow: none;
+  transform: scale(1.05);
+  box-shadow: none;
 }
 
-
 @media (max-width: 1250px) {
-    .highlights {
-        gap: 2em;
-    }
+  .highlights {
+    gap: 2em;
+  }
 }
 
 @media (max-width: 992px) {
-    .project-article,
-    .highlights h1 {
-        grid-column: span 3;
-    }
+  .project-article,
+  .highlights h1 {
+    grid-column: span 3;
+  }
 
-    .highlights {
-        padding: 0 2.5em;
-    }
+  .highlights {
+    padding: 0 2.5em;
+  }
 
-    .project-article {
-        width: 450px;
-        margin: auto;
-    }
+  .project-article {
+    width: 450px;
+    margin: auto;
+  }
 }
 
-
 @media (max-width: 767px) {
-    .project-article {
-        width: auto;
-    }
+  .project-article {
+    width: auto;
+  }
 }
