@@ -7,7 +7,7 @@ Uppgiften består av att skapa en webbsida som en fiktiv webbutvecklare kan mark
 
 ## Tekniker
 
-Projektet använder sig av PHP och Twig som adderar funkionalitet som t.ex. logik i HTML-koden så t.ex. i projektet kan ladda in rätt CSS-filer för rätt tema samt välja mellan darkmode och vanligt tema.
+Projektet använder sig av PHP och templatemotorn Twig som hjälpt till att skapa en dynamisk webbsida. T.ex. så att projektet kan ladda in rätt CSS-filer för rätt tema samt välja mellan darkmode och vanligt tema.
 
 Då projektet består av mycket CSS-kod har SASS varit en central del för att modularisera css-koden med imports, använda variablar för att kunna återanvända CSS-kod och använda sig av nästlad kod för att få en bättre struktur i filerna.
 
